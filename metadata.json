@@ -9,7 +9,7 @@
   "issues_url": "https://github.com/madelaney/artifactory/issues",
   "dependencies": [
     {
-      "name": "archive",
+      "name": "puppet-archive",
       "version_requirement": ">= 1.0.0"
     },
     {
