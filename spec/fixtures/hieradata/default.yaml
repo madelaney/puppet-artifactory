@@ -1,0 +1,3 @@
+---
+# Default key/value pairs
+artifactory::ensure: present
