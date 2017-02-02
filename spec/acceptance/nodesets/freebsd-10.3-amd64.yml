@@ -1,0 +1,13 @@
+HOSTS:
+  freebsd-10.3-amd64:
+    roles:
+      - agents
+      - frictionless
+    platform: freebsd-10.3-amd64
+    box: bento/freebsd-10.3-amd64
+    box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_freebsd-10.3_chef-provisionerless.box
+    hypervisor: vagrant
+CONFIG:
+  log_level: verbose
+  type: foss
+  disable_updates: false

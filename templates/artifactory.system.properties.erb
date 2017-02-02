@@ -1,0 +1,8 @@
+#
+# This file is managed by Puppet; do not edit by hand.
+#
+<% unless @system_properties.empty? -%>
+<% @system_properties.keys.each do |key| -%>
+<%= key -%>=<%= @system_properties[key] %>
+<% end -%>
+<% end -%>

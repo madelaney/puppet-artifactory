@@ -1,0 +1,10 @@
+fixtures:
+  repositories:
+    wget:
+      repo: 'https://github.com/maestrodev/puppet-wget.git'
+  forge_modules:
+    stdlib: "puppetlabs/stdlib"
+    archive: "puppet/archive"
+    apt: "puppetlabs/apt"
+  symlinks:
+    artifactory: "#{source_dir}"
