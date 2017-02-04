@@ -114,7 +114,7 @@ define artifactory::package::source(
       require => Archive[$archive_filename];
   }
 
-  if $::osfamily == 'FreeBSD' {
+  if $::artifactory::update_shebang {
     exec {
       "fix shebang on artifactory.sh (${version})":
         command     => 'perl -p -i -e \'s/\#\!\/bin\/bash/\#\!\/usr\/bin\/env bash\'/ bin/artifactory.sh',
