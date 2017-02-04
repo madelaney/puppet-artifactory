@@ -15,8 +15,8 @@ class artifactory::params() {
   $db_type = 'derby'
   $db_name = 'artifactory'
 
+  $db_host = localhost
   $db_driver = undef
-  $db_host = undef
   $db_port = undef
 
   $storage_properties = {
