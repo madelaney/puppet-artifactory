@@ -35,9 +35,6 @@ define artifactory::package::source(
   $zip_filename = "jfrog-${filename}"
   $archive_filename = "${zip_filename}.zip"
 
-  # https://dl.bintray.com/jfrog/artifactory-pro/org/artifactory/pro/jfrog-artifactory-pro/4.10.0/jfrog-artifactory-pro-4.10.0.zip
-  # https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-oss-4.10.0.zip;bt_package=jfrog-artifactory-oss-zip
-
   if $download_url {
     $_real_download_url = $download_url
   }
@@ -50,86 +47,94 @@ define artifactory::package::source(
 
   $_real_install_dir = "${install_dir}/${filename}"
 
-  archive {
-    $archive_filename:
-      source       => $_real_download_url,
-      path         => "/tmp/${archive_filename}",
-      extract      => true,
-      extract_path => $install_dir,
-      cleanup      => false,
-      user         => $owner,
-      group        => $group,
-      require      => File[$install_dir];
-  }
-
-  exec {
-    "update _real_install_dir permissions (${version})":
-      command     => "chown ${owner}:${group} ${_real_install_dir}",
-      path        => ['/bin', '/usr/sbin'],
-      subscribe   => Archive[$archive_filename],
-      refreshonly => true;
-
-    "tomcat permission (${version})":
-      command     => "chown ${owner}:${group} ${_real_install_dir}",
-      path        => ['/bin', '/usr/sbin'],
-      subscribe   => Archive[$archive_filename],
-      refreshonly => true;
-  }
-
-  case $db_type {
-    'derby': {}
-    'postgresql': {
-      artifactory::db::postgresql {
-        "artifactory ${version} postgresql ${driver_version}":
-          target  => "${_real_install_dir}/tomcat/lib",
-          version => $driver_version,
-          require => Archive[$archive_filename];
-      }
+  if $ensure == 'present' {
+    archive {
+      $archive_filename:
+        source       => $_real_download_url,
+        path         => "/tmp/${archive_filename}",
+        extract      => true,
+        extract_path => $install_dir,
+        cleanup      => false,
+        user         => $owner,
+        group        => $group,
+        require      => File[$install_dir];
     }
-    default: {
-      notice("Database type ${db_type} is not supported")
-    }
-  }
 
-  file {
-    "${_real_install_dir}/logs":
-      ensure  => link,
-      owner   => $owner,
-      target  => "${data_dir}/logs",
-      force   => true,
-      require => Archive[$archive_filename];
-
-    "${_real_install_dir}/etc":
-      ensure  => link,
-      owner   => $owner,
-      target  => "${data_dir}/etc",
-      force   => true,
-      require => Archive[$archive_filename];
-
-    "${_real_install_dir}/data":
-      ensure  => link,
-      owner   => $owner,
-      target  => "${data_dir}/data",
-      force   => true,
-      require => Archive[$archive_filename];
-  }
-
-  if $::artifactory::update_shebang {
     exec {
-      "fix shebang on artifactory.sh (${version})":
-        command     => 'perl -p -i -e \'s/\#\!\/bin\/bash/\#\!\/usr\/bin\/env bash\'/ bin/artifactory.sh',
-        path        => ['/usr/bin', '/usr/local/bin'],
-        cwd         => $_real_install_dir,
+      "update _real_install_dir permissions (${version})":
+        command     => "chown ${owner}:${group} ${_real_install_dir}",
+        path        => ['/bin', '/usr/sbin'],
+        subscribe   => Archive[$archive_filename],
+        refreshonly => true;
+
+      "tomcat permission (${version})":
+        command     => "chown ${owner}:${group} ${_real_install_dir}",
+        path        => ['/bin', '/usr/sbin'],
         subscribe   => Archive[$archive_filename],
         refreshonly => true;
     }
-  }
 
-  if $current {
+    case $db_type {
+      'derby': {}
+      'postgresql': {
+        artifactory::db::postgresql {
+          "artifactory ${version} postgresql ${driver_version}":
+            target  => "${_real_install_dir}/tomcat/lib",
+            version => $driver_version,
+            require => Archive[$archive_filename];
+        }
+      }
+      default: {
+        notice("Database type ${db_type} is not supported")
+      }
+    }
+
     file {
-      "${install_dir}/current":
-        ensure => link,
-        target => $_real_install_dir;
+      "${_real_install_dir}/logs":
+        ensure  => link,
+        owner   => $owner,
+        target  => "${data_dir}/logs",
+        force   => true,
+        require => Archive[$archive_filename];
+
+      "${_real_install_dir}/etc":
+        ensure  => link,
+        owner   => $owner,
+        target  => "${data_dir}/etc",
+        force   => true,
+        require => Archive[$archive_filename];
+
+      "${_real_install_dir}/data":
+        ensure  => link,
+        owner   => $owner,
+        target  => "${data_dir}/data",
+        force   => true,
+        require => Archive[$archive_filename];
+    }
+
+    if $::artifactory::update_shebang {
+      exec {
+        "fix shebang on artifactory.sh (${version})":
+          command     => 'perl -p -i -e \'s/\#\!\/bin\/bash/\#\!\/usr\/bin\/env bash\'/ bin/artifactory.sh',
+          path        => ['/usr/bin', '/usr/local/bin'],
+          cwd         => $_real_install_dir,
+          subscribe   => Archive[$archive_filename],
+          refreshonly => true;
+      }
+    }
+
+    if $current {
+      file {
+        "${install_dir}/current":
+          ensure => link,
+          target => $_real_install_dir;
+      }
+    }
+  }
+  else {
+    file {
+      $_real_install_dir:
+        ensure => absent;
     }
   }
 }

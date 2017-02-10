@@ -27,6 +27,10 @@ describe 'artifactory' do
             'v4.5.2' => {
               'ensure'  => 'present',
               'version' => '4.5.2'
+            },
+            'v5.0.1' => {
+              'ensure'  => 'absent',
+              'version' => '5.0.1'
             }
           }
         }
@@ -78,6 +82,9 @@ describe 'artifactory' do
               it { is_expected.to contain_artifactory__package__source('v4.5.2') }
               it { is_expected.to contain_exec('tomcat permission (4.5.2)') }
               it { is_expected.to contain_exec('update _real_install_dir permissions (4.5.2)') }
+
+              it { is_expected.to contain_artifactory__package__source('v5.0.1') }
+              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.0.1").with_ensure('absent') }
 
               it { is_expected.to_not contain_package('jfrog-artifactory') }
 
