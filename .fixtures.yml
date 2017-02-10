@@ -2,6 +2,7 @@ fixtures:
   repositories:
     wget:
       repo: 'https://github.com/maestrodev/puppet-wget.git'
+      ref: 14b00e64c4d990d18a7b20f0e7098956c55806c5
   forge_modules:
     stdlib: "puppetlabs/stdlib"
     archive: "puppet/archive"
