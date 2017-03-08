@@ -1,0 +1,22 @@
+#
+# This file is managed by Puppet; do not edit by hand.
+#
+type=<%= @db_type %>
+<% if @db_driver -%>
+driver=<%= @db_driver %>
+<% end -%>
+<% if @jdbc_driver_url -%>
+url=<%= @jdbc_driver_url %>
+<% end -%>
+<% if @db_username -%>
+username=<%= @db_username %>
+<% end -%>
+<% if @db_password -%>
+password=<%= @db_password %>
+<% end -%>
+
+<% unless @db_properties.empty? -%>
+<% @db_properties.keys.each do |key| -%>
+<%= key -%>=<%= @db_properties[key] %>
+<% end -%>
+<% end -%>

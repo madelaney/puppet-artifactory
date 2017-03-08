@@ -105,6 +105,7 @@ describe 'artifactory' do
 
               it { is_expected.to contain_file("#{data_dir}/etc/artifactory.system.properties") }
               it { is_expected.to contain_file("#{data_dir}/etc/storage.properties") }
+              it { is_expected.to contain_file("#{data_dir}/etc/db.properties") }
               it { is_expected.to contain_file("#{data_dir}/etc/artifactory.lic").with_ensure('absent') }
               it { is_expected.to contain_file("#{data_dir}/etc/plugins") }
 
