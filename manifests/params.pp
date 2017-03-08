@@ -19,6 +19,8 @@ class artifactory::params() {
   $db_driver = undef
   $db_port = undef
 
+  $db_properties = {}
+
   $storage_properties = {
     'binary_provider_type' => 'filesystem',
     'binary.provider.cache.maxSize' => '5GB'

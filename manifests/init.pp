@@ -64,6 +64,7 @@ class artifactory(
   $source_download_url                = $::artifactory::params::source_download_url,
   $storage_properties                 = $::artifactory::params::storage_properties,
   $system_properties                  = $::artifactory::params::system_properties,
+  $db_properties                      = $::artifactory::params::db_properties,
   $manage_user                        = $::artifactory::params::manage_user,
   $data_dir                           = $::artifactory::params::data_dir,
   $update_shebang                     = $::artifactory::params::update_shebang

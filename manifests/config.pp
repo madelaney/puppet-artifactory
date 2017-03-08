@@ -23,7 +23,8 @@ class artifactory::config(
   $db_username        = $::artifactory::db_username,
   $db_password        = $::artifactory::db_password,
   $storage_properties = $::artifactory::storage_properties,
-  $system_properties  = $::artifactory::system_properties
+  $system_properties  = $::artifactory::system_properties,
+  $db_properties      = $::artifactory::db_properties
 ) {
 
   validate_re($db_type, ['derby', 'postgresql'])
@@ -73,6 +74,13 @@ class artifactory::config(
     "${::artifactory::data_dir}/etc/artifactory.system.properties":
       ensure  => file,
       content => template('artifactory/artifactory.system.properties.erb'),
+      owner   => $owner,
+      group   => $group,
+      mode    => '0400';
+
+    "${::artifactory::data_dir}/etc/db.properties":
+      ensure  => file,
+      content => template('artifactory/db.properties.erb'),
       owner   => $owner,
       group   => $group,
       mode    => '0400';
