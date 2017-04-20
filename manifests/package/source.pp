@@ -112,6 +112,17 @@ define artifactory::package::source(
         require => Archive[$archive_filename];
     }
 
+    unless $version < '5.1.1' {
+      file {
+        "${_real_install_dir}/access":
+          ensure  => link,
+          owner   => $owner,
+          target  => "${data_dir}/access",
+          force   => true,
+          require => Archive[$archive_filename];
+      }
+    }
+
     if $::artifactory::update_shebang {
       exec {
         "fix shebang on artifactory.sh (${version})":

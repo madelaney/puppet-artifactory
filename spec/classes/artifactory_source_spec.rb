@@ -31,6 +31,10 @@ describe 'artifactory' do
             'v5.0.1' => {
               'ensure'  => 'absent',
               'version' => '5.0.1'
+            },
+            'v5.1.4' => {
+              'ensure'  => 'absent',
+              'version' => '5.1.4'
             }
           }
         }
