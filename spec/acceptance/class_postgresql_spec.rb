@@ -38,7 +38,7 @@ describe 'artifactory class' do
         class {
           'artifactory':
             ensure      => present,
-            db_driver   => 'org.postgresql222.Driver',
+            db_driver   => 'org.postgresql.Driver',
             db_type     => 'postgresql',
             db_host     => 'localhost',
             db_port     => '9876',
@@ -50,7 +50,10 @@ describe 'artifactory class' do
                 version => '4.5.1'
               },
               "v4.10.0" => {
-                version => '4.10.0',
+                version => '4.10.0'
+              },
+              "v5.1.4" => {
+                version => '5.1.4',
                 current => true
               }
             };

@@ -7,8 +7,8 @@ describe 'artifactory' do
         {
           'ensure'       => 'present',
           'license'      => 'my_license_key',
-          'type'         => artifactory_type,
-          'install_type' => 'source'
+          'install_type' => 'source',
+          'type'         => artifactory_type
         }
       end
 
@@ -18,14 +18,37 @@ describe 'artifactory' do
             let(:facts) { facts }
             let(:params) do
               {
-                'db_type' => 'postgresql'
+                'db_driver'   => 'org.postgresql.Driver',
+                'db_type'     => 'postgresql',
+                'db_host'     => 'localhost',
+                'db_port'     => '9876',
+                'db_name'     => 'artifactory2',
+                'db_username' => 'db-username',
+                'db_password' => 'superPassword'
               }.merge(default_params)
+            end
+
+            case facts[:kernel]
+              when 'FreeBSD'
+                data_dir = '/usr/local/etc/artifactory'
+                install_dir = '/usr/local/artifactory'
+              else
+                data_dir = '/var/lib/artifactory'
+                install_dir = '/opt/jfrog/artifactory'
             end
 
             include_examples :compile
 
             context 'should install postgre jdbc driver' do
               it { is_expected.to contain_artifactory__db__postgresql('artifactory 4.5.1 postgresql 9.4.1211').that_comes_before('artifactory::service') }
+            end
+
+            context 'should assign the currect user' do
+              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_user('artifactory') }
+            end
+
+            context 'should assign the correct group' do
+              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_group('artifactory') }
             end
           end
         end

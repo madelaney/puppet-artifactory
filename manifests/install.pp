@@ -24,6 +24,13 @@ class artifactory::install(
 ) {
   validate_hash($sources)
 
+  $data_dir_list = [
+    "${data_dir}/etc",
+    "${data_dir}/etc/plugins",
+    "${data_dir}/logs",
+    "${data_dir}/misc"
+  ]
+
   file {
     $data_dir:
       ensure => directory,
@@ -38,7 +45,7 @@ class artifactory::install(
       mode    => '0750',
       require => File[$data_dir];
 
-    ["${data_dir}/etc", "${data_dir}/etc/plugins", "${data_dir}/logs", "${data_dir}/misc"]:
+    $data_dir_list:
       ensure  => directory,
       owner   => $user,
       group   => $group,
@@ -59,39 +66,20 @@ class artifactory::install(
   }
 
   if $install_type != 'source' {
-    case $install_type {
-      'yum': { require ::artifactory::repo::yum }
-      'apt': { require ::artifactory::repo::apt }
-      default: {
-        warning("Unknown install type: ${install_type}")
-      }
-    }
-
     $package_name = $::artifactory::type ? {
       'pro'   => $::artifactory::pro_package_name,
       default => $::artifactory::oss_package_name
     }
 
+    class {
+      "::artifactory::repo::${install_type}":
+        before => Package[$package_name];
+    }
+
     package {
       $package_name:
         ensure => $version,
-        before => Class['::artifactory::config'],
-    }
-
-    case $::osfamily {
-      'Debian': {
-        Package[$package_name] {
-          require => Class['::artifactory::repo::apt']
-        }
-      }
-      'Redhat': {
-        Package[$package_name] {
-          require => Class['::artifactory::repo::yum']
-        }
-      }
-      default: {
-        # Nothing
-      }
+        before => Class['::artifactory::config'];
     }
   }
   else {

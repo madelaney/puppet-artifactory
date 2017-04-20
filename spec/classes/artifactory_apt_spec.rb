@@ -12,6 +12,8 @@ describe 'artifactory' do
 
   context 'supported operating systems' do
     on_supported_os.each do |os, facts|
+      next unless os =~ /ubuntu/
+
       context "on #{os}" do
         let(:facts) { facts }
 

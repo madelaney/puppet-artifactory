@@ -23,7 +23,7 @@ define artifactory::db::postgresql(
   archive {
     "${target}/${jar}":
       ensure => present,
-      user   => $::artifactory::owner,
+      user   => $::artifactory::user,
       group  => $::artifactory::group,
       source => "https://jdbc.postgresql.org/download/${jar}";
   }
