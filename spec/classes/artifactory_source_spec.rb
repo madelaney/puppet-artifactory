@@ -19,7 +19,7 @@ describe 'artifactory' do
               'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/storage/layoutProperties/layoutProperties.groovy'
             }
           },
-          'sources'      => {
+          'sources' => {
             'v4.5.1' => {
               'ensure'  => 'present',
               'version' => '4.5.1'
