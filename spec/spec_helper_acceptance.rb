@@ -20,7 +20,7 @@ RSpec.configure do |c|
         on host, 'pkg install -y ruby22-gems'
         on host, 'pkg install -y puppet38'
 
-        # FIXME (mdelaney)
+        # FIXME: mdelaney
         # Beaker has a bug where when :disable_updates is true, and on FreeBSD,
         # the file /etc/hosts is updated to only contain the disabled
         # updated.puppetlabs.com entry

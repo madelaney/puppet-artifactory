@@ -30,10 +30,8 @@ describe 'artifactory' do
 
             case facts[:kernel]
               when 'FreeBSD'
-                data_dir = '/usr/local/etc/artifactory'
                 install_dir = '/usr/local/artifactory'
               else
-                data_dir = '/var/lib/artifactory'
                 install_dir = '/opt/jfrog/artifactory'
             end
 
