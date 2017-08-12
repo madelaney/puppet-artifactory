@@ -39,6 +39,7 @@ class artifactory::params() {
       $data_dir = '/usr/local/etc/artifactory'
       $service_dir = '/usr/local/etc/rc.d'
       $update_shebang = true
+      $artifactory_home = '/usr/local/artifactory'
     }
     /RedHat|CentOS/: {
       $install_type = 'yum'
@@ -48,6 +49,7 @@ class artifactory::params() {
       $data_dir = '/var/lib/artifactory'
       $service_dir = '/etc/rc.d/init.d'
       $update_shebang = true
+      $artifactory_home = '/opt/artifactory'
     }
     default: {
       $install_type = 'apt'
@@ -57,6 +59,7 @@ class artifactory::params() {
       $data_dir = '/var/lib/artifactory'
       $service_dir = '/etc/init.d'
       $update_shebang = false
+      $artifactory_home = '/opt/artifactory'
     }
   }
 }
