@@ -97,7 +97,7 @@ class artifactory::install(
 
     exec {
       "mktree ${install_dir}":
-        command => "mkdir -m 0750 -vp ${install_dir}",
+        command => "mkdir -vp ${install_dir}",
         path    => ['/bin', '/usr/bin'],
         creates => $install_dir,
         user    => 'root',
