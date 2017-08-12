@@ -33,7 +33,7 @@ describe 'artifactory' do
               'version' => '5.0.1'
             },
             'v5.1.4' => {
-              'ensure'  => 'absent',
+              'ensure'  => 'present',
               'version' => '5.1.4'
             }
           }
@@ -90,6 +90,10 @@ describe 'artifactory' do
               it { is_expected.to contain_artifactory__package__source('v5.0.1') }
               it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.0.1").with_ensure('absent') }
 
+              it { is_expected.to contain_artifactory__package__source('v5.1.4') }
+              it { is_expected.to contain_exec('tomcat permission (5.1.4)') }
+              it { is_expected.to contain_exec('update _real_install_dir permissions (5.1.4)') }
+
               it { is_expected.to_not contain_package('jfrog-artifactory') }
 
               it { is_expected.to_not contain_class('artifactory::repo::yum') }
@@ -97,6 +101,7 @@ describe 'artifactory' do
 
               it { is_expected.to contain_archive("jfrog-artifactory-#{artifactory_type}-4.5.1.zip") }
               it { is_expected.to contain_archive("jfrog-artifactory-#{artifactory_type}-4.5.2.zip") }
+              it { is_expected.to contain_archive("jfrog-artifactory-#{artifactory_type}-5.1.4.zip") }
 
               it { is_expected.to contain_artifactory__plugin('build-properties').that_comes_before('artifactory::service') }
               it { is_expected.to contain_wget__fetch('build-properties').that_comes_before('artifactory::service') }
@@ -116,10 +121,17 @@ describe 'artifactory' do
               it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/etc") }
               it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/logs") }
               it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/data") }
+              it { is_expected.to_not contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/access") }
 
               it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/etc") }
               it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/logs") }
               it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/data") }
+              it { is_expected.to_not contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/access") }
+
+              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.1.4/etc") }
+              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.1.4/logs") }
+              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.1.4/data") }
+              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.1.4/access") }
 
               it { is_expected.to contain_exec("mktree #{install_dir}") }
               it { is_expected.to contain_file(install_dir) }
@@ -133,6 +145,8 @@ describe 'artifactory' do
               when 'FreeBSD'
                 it { is_expected.to contain_exec('fix shebang on artifactory.sh (4.5.1)') }
                 it { is_expected.to contain_exec('fix shebang on artifactory.sh (4.5.2)') }
+                it { is_expected.to contain_exec('fix shebang on artifactory.sh (5.1.4)') }
+
                 it { is_expected.to contain_file_line('artifactory rc.d entry') }
                 it { is_expected.to contain_file('/usr/local/etc/rc.d/artifactory') }
 

@@ -17,8 +17,8 @@ RSpec.configure do |c|
   c.before :suite do
     hosts.each do |host|
       if /freebsd/i =~ host
-        on host, 'pkg install -y ruby22-gems'
-        on host, 'pkg install -y puppet38'
+        on host, 'pkg install -y ruby23-gems'
+        on host, 'pkg install -y puppet4'
 
         # FIXME: mdelaney
         # Beaker has a bug where when :disable_updates is true, and on FreeBSD,
