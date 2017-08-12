@@ -39,14 +39,17 @@ describe 'artifactory' do
 
             context 'should install postgre jdbc driver' do
               it { is_expected.to contain_artifactory__db__postgresql('artifactory 4.5.1 postgresql 9.4.1211').that_comes_before('artifactory::service') }
+              it { is_expected.to contain_artifactory__db__postgresql('artifactory 4.5.2 postgresql 9.4.1211').that_comes_before('artifactory::service') }
             end
 
             context 'should assign the currect user' do
               it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_user('artifactory') }
+              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/tomcat/lib/postgresql-9.4.1211.jar").with_user('artifactory') }
             end
 
             context 'should assign the correct group' do
               it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_group('artifactory') }
+              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/tomcat/lib/postgresql-9.4.1211.jar").with_group('artifactory') }
             end
           end
         end
