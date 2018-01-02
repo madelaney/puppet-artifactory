@@ -8,7 +8,9 @@ describe 'artifactory' do
           'ensure'       => 'present',
           'license'      => 'my_license_key',
           'install_type' => 'source',
-          'type'         => artifactory_type
+          'type'         => artifactory_type,
+          'user'         => 'jfrog',
+          'group'        => 'jfrog'
         }
       end
 
@@ -25,7 +27,7 @@ describe 'artifactory' do
                 'db_name'     => 'artifactory2',
                 'db_username' => 'db-username',
                 'db_password' => 'superPassword'
-              }.merge(default_params)
+              }.merge!(default_params)
             end
 
             case facts[:kernel]
@@ -43,13 +45,15 @@ describe 'artifactory' do
             end
 
             context 'should assign the currect user' do
-              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_user('artifactory') }
-              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/tomcat/lib/postgresql-9.4.1211.jar").with_user('artifactory') }
+              it {
+                puts params
+                is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_user('jfrog') }
+              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/tomcat/lib/postgresql-9.4.1211.jar").with_user('jfrog') }
             end
 
             context 'should assign the correct group' do
-              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_group('artifactory') }
-              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/tomcat/lib/postgresql-9.4.1211.jar").with_group('artifactory') }
+              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_group('jfrog') }
+              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/tomcat/lib/postgresql-9.4.1211.jar").with_group('jfrog') }
             end
           end
         end
