@@ -9,9 +9,14 @@
 define artifactory::db::postgresql(
   $target,
   $version,
-  $jre = undef
+  $user  = $::artifactory::user,
+  $group = $::artifactory::group,
+  $jre   = undef
 ) {
-  require ::artifactory
+  # The base class must be included first because it is used by parameter defaults
+  if ! defined(Class['artifactory']) {
+    fail('You must include the Artifactory base class before using any Artifactory defined resources')
+  }
 
   if $jre {
     $jar = "postgresql-${version}.${jre}.jar"
@@ -23,8 +28,8 @@ define artifactory::db::postgresql(
   archive {
     "${target}/${jar}":
       ensure => present,
-      user   => $::artifactory::user,
-      group  => $::artifactory::group,
+      user   => $user,
+      group  => $group,
       source => "https://jdbc.postgresql.org/download/${jar}";
   }
 }
