@@ -41,7 +41,7 @@ define artifactory::package::source(
   else {
     $_real_download_url = $type ? {
       pro     => "https://dl.bintray.com/jfrog/artifactory-pro/org/artifactory/pro/jfrog-artifactory-pro/${version}/${archive_filename}",
-      default => "https://api.bintray.com/content/jfrog/artifactory/${archive_filename};bt_package=jfrog-artifactory-oss-zip"
+      default => "https://dl.bintray.com/jfrog/artifactory/${archive_filename};bt_package=jfrog-artifactory-oss-zip"
     }
   }
 
