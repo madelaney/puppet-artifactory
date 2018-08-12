@@ -1,0 +1,10 @@
+---
+artifactory::oss_package_name: artifactory
+artifactory::pro_package_name: undef
+artifactory::install_dir: /usr/local/artifactory
+artifactory::data_dir: /usr/local/etc/artifactory
+artifactory::service_dir: /usr/local/etc/rc.d
+artifactory::update_shebang: true
+artifactory::java_home: /usr/local/openjdk8
+
+artifactory::service::service_provider: freebsd

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27" />
+    <orderEntry type="jdk" jdkName="ruby-2.3.3-p222" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="rubocop (vbundled(0.57.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/bin" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/exe" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/lib" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/assets" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/config" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/bin" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/exe" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/lib" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/assets" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/config" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/bin" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/exe" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/assets" />
+          <root url="file://$USER_HOME$/.bundle/ruby/ruby/2.3.0/gems/rubocop-0.57.1/config" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.0, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.16.2, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jaro_winkler (v1.5.1, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.8.5, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parallel (v1.12.1, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parser (v2.5.0.0, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="powerpack (v0.1.1, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.0.0, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v10.4.2, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.9.0, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v1.3.0, ruby-2.3.3-p222) [gem]" level="application" />
+  </component>
+  <component name="RubyModuleProperties">
+    <option name="autoCreated" value="true" />
+  </component>
+</module>

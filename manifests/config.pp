@@ -14,20 +14,22 @@
 # @param [Hash] system_properties Hash of system properties
 #
 class artifactory::config(
-  $owner              = $::artifactory::owner,
-  $group              = $::artifactory::group,
-  $db_type            = $::artifactory::db_type,
-  $db_host            = $::artifactory::db_host,
-  $db_port            = $::artifactory::db_port,
-  $db_name            = $::artifactory::db_name,
-  $db_username        = $::artifactory::db_username,
-  $db_password        = $::artifactory::db_password,
-  $storage_properties = $::artifactory::storage_properties,
-  $system_properties  = $::artifactory::system_properties,
-  $db_properties      = $::artifactory::db_properties
+  String $user                    = $::artifactory::user,
+  String $group                   = $::artifactory::group,
+  Artifactory::Database $db_type  = $::artifactory::db_type,
+  Optional[String] $db_host       = $::artifactory::db_host,
+  Optional[Integer] $db_port      = $::artifactory::db_port,
+  Optional[String] $db_name       = $::artifactory::db_name,
+  Optional[String] $db_username   = $::artifactory::db_username,
+  Optional[String] $db_password   = $::artifactory::db_password,
+  Hash $storage_properties        = $::artifactory::storage_properties,
+  Hash $system_properties         = $::artifactory::system_properties,
+  Hash $db_properties             = $::artifactory::db_properties,
+  String $java_xms                = $::artifactory::java_xms,
+  String $java_xmx                = $::artifactory::java_xmx,
+  Array $java_opts                = $::artifactory::java_opts
 ) {
-
-  validate_re($db_type, ['derby', 'postgresql'])
+  assert_private()
 
   case $db_type {
     'derby': {
@@ -57,7 +59,7 @@ class artifactory::config(
       "${::artifactory::data_dir}/etc/artifactory.lic":
         ensure  => file,
         content => $::artifactory::license,
-        owner   => $owner,
+        owner   => $user,
         group   => $group,
         mode    => '0664';
     }
@@ -67,21 +69,21 @@ class artifactory::config(
     "${::artifactory::data_dir}/etc/storage.properties":
       ensure  => file,
       content => template('artifactory/storage.properties.erb'),
-      owner   => $owner,
+      owner   => $user,
       group   => $group,
       mode    => '0400';
 
     "${::artifactory::data_dir}/etc/artifactory.system.properties":
       ensure  => file,
       content => template('artifactory/artifactory.system.properties.erb'),
-      owner   => $owner,
+      owner   => $user,
       group   => $group,
       mode    => '0400';
 
     "${::artifactory::data_dir}/etc/db.properties":
       ensure  => file,
       content => template('artifactory/db.properties.erb'),
-      owner   => $owner,
+      owner   => $user,
       group   => $group,
       mode    => '0400';
   }

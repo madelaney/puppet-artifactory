@@ -8,12 +8,3 @@ artifactory::sources:
   'v4.5.2':
     ensure: present
     version: 4.5.2
-  'v5.0.1':
-    ensure: absent
-    version: 5.0.1
-  'v5.1.4':
-    ensure: absent
-    version: 5.1.4
-  'v5.3.1':
-    ensure: absent
-    version: 5.3.1

@@ -1,5 +1,20 @@
 require 'spec_helper'
 
+class Version < Array
+  def initialize s
+    super(s.split('.').map { |e| e.to_i })
+  end
+  def < x
+    (self <=> x) < 0
+  end
+  def > x
+    (self <=> x) > 0
+  end
+  def == x
+    (self <=> x) == 0
+  end
+end
+
 describe 'artifactory' do
   ['oss', 'pro'].each do |artifactory_type|
     context "#{artifactory_type}" do
@@ -7,7 +22,6 @@ describe 'artifactory' do
         {
           'ensure'       => 'present',
           'type'         => artifactory_type,
-          'install_type' => 'source',
           'plugins'      => {
             'download-directory' => {
               'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/cleanup/buildCleanup/buildCleanup.groovy'
@@ -28,13 +42,13 @@ describe 'artifactory' do
               'ensure'  => 'present',
               'version' => '4.5.2'
             },
-            'v5.0.1' => {
-              'ensure'  => 'absent',
-              'version' => '5.0.1'
-            },
             'v5.1.4' => {
               'ensure'  => 'present',
               'version' => '5.1.4'
+            },
+            'v6.1.0' => {
+              'ensure'  => 'present',
+              'version' => '6.1.0'
             }
           }
         }
@@ -42,17 +56,20 @@ describe 'artifactory' do
 
       context 'supported operating systems' do
         on_supported_os.each do |os, facts|
-          context "on #{os}" do
+          context "on #{os} (#{facts[:os]['family']})" do
             let(:facts) { facts }
             let(:params) { default_params }
 
-            case facts[:kernel]
-              when 'FreeBSD'
-                data_dir = '/usr/local/etc/artifactory'
-                install_dir = '/usr/local/artifactory'
-              else
-                data_dir = '/var/lib/artifactory'
-                install_dir = '/opt/jfrog/artifactory'
+            case facts[:os]['family']
+            when 'FreeBSD'
+              data_dir = '/usr/local/etc/artifactory'
+              install_dir = '/usr/local/artifactory'
+            when 'RedHat'
+              data_dir = '/var/lib/artifactory'
+              install_dir = '/opt/artifactory'
+            else
+              data_dir = '/var/opt/jfrog/artifactory'
+              install_dir = '/opt/artifactory'
             end
 
             include_examples :compile
@@ -62,101 +79,76 @@ describe 'artifactory' do
               it { is_expected.to contain_group('artifactory') }
             end
 
+            context 'installation of plugins' do
+              it { is_expected.to contain_artifactory__plugin('build-properties').that_comes_before('Service[artifactory]') }
+              it { is_expected.to contain_archive('build-properties').that_comes_before('Service[artifactory]') }
+
+              it { is_expected.to contain_artifactory__plugin('download-directory').that_comes_before('Service[artifactory]') }
+              it { is_expected.to contain_archive('download-directory').that_comes_before('Service[artifactory]') }
+
+              it { is_expected.to contain_artifactory__plugin('layout-properties').that_comes_before('Service[artifactory]') }
+              it { is_expected.to contain_archive('layout-properties').that_comes_before('Service[artifactory]') }
+
+              it { is_expected.to have_vcsrepo_count(0) }
+            end
+
             context 'installation without license key' do
-              it { is_expected.to contain_class('artifactory::install').that_comes_before('artifactory::config') }
-              it { is_expected.to contain_class('artifactory::config').that_comes_before('artifactory::plugins') }
+              it { is_expected.to contain_class('artifactory::install').that_comes_before('Class[artifactory::config]') }
+              it { is_expected.to contain_class('artifactory::config').that_comes_before('Class[artifactory::plugins]') }
 
               it { is_expected.to contain_class('artifactory') }
               it { is_expected.to contain_class('artifactory::config') }
-              it { is_expected.to contain_class('artifactory::params') }
 
               it { is_expected.to contain_class('artifactory::plugins') }
-              it { is_expected.to contain_class('artifactory::service').that_subscribes_to('artifactory::config') }
-              it { is_expected.to contain_class('artifactory::service').that_subscribes_to('artifactory::plugins') }
+              it { is_expected.to contain_class('artifactory::service').that_subscribes_to('Class[artifactory::config]') }
+              it { is_expected.to contain_class('artifactory::service').that_subscribes_to('Class[artifactory::plugins]') }
 
               it { is_expected.to contain_service('artifactory') }
-              it { is_expected.to contain_class('artifactory::params') }
-
-              it { is_expected.to contain_class('artifactory::params') }
-
-              it { is_expected.to contain_artifactory__package__source('v4.5.1') }
-              it { is_expected.to contain_exec('tomcat permission (4.5.1)') }
-              it { is_expected.to contain_exec('update _real_install_dir permissions (4.5.1)') }
-
-              it { is_expected.to contain_artifactory__package__source('v4.5.2') }
-              it { is_expected.to contain_exec('tomcat permission (4.5.2)') }
-              it { is_expected.to contain_exec('update _real_install_dir permissions (4.5.2)') }
-
-              it { is_expected.to contain_artifactory__package__source('v5.0.1') }
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.0.1").with_ensure('absent') }
-
-              it { is_expected.to contain_artifactory__package__source('v5.1.4') }
-              it { is_expected.to contain_exec('tomcat permission (5.1.4)') }
-              it { is_expected.to contain_exec('update _real_install_dir permissions (5.1.4)') }
-
-              it { is_expected.to_not contain_package('jfrog-artifactory') }
-
-              it { is_expected.to_not contain_class('artifactory::repo::yum') }
-              it { is_expected.to_not contain_class('artifactory::repo::apt') }
-
-              it { is_expected.to contain_archive("jfrog-artifactory-#{artifactory_type}-4.5.1.zip") }
-              it { is_expected.to contain_archive("jfrog-artifactory-#{artifactory_type}-4.5.2.zip") }
-              it { is_expected.to contain_archive("jfrog-artifactory-#{artifactory_type}-5.1.4.zip") }
-
-              it { is_expected.to contain_artifactory__plugin('build-properties').that_comes_before('artifactory::service') }
-              it { is_expected.to contain_wget__fetch('build-properties').that_comes_before('artifactory::service') }
-
-              it { is_expected.to contain_artifactory__plugin('download-directory').that_comes_before('artifactory::service') }
-              it { is_expected.to contain_wget__fetch('download-directory').that_comes_before('artifactory::service') }
-
-              it { is_expected.to contain_artifactory__plugin('layout-properties').that_comes_before('artifactory::service') }
-              it { is_expected.to contain_wget__fetch('layout-properties').that_comes_before('artifactory::service') }
 
               it { is_expected.to contain_file("#{data_dir}/etc/artifactory.system.properties") }
               it { is_expected.to contain_file("#{data_dir}/etc/storage.properties") }
               it { is_expected.to contain_file("#{data_dir}/etc/db.properties") }
               it { is_expected.to contain_file("#{data_dir}/etc/artifactory.lic").with_ensure('absent') }
               it { is_expected.to contain_file("#{data_dir}/etc/plugins") }
-
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/etc") }
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/logs") }
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/data") }
-              it { is_expected.to_not contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/access") }
-
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/etc") }
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/logs") }
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/data") }
-              it { is_expected.to_not contain_file("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/access") }
-
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.1.4/etc") }
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.1.4/logs") }
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.1.4/data") }
-              it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-5.1.4/access") }
-
-              it { is_expected.to contain_exec("mktree #{install_dir}") }
-              it { is_expected.to contain_file(install_dir) }
-              it { is_expected.to contain_file(data_dir) }
               it { is_expected.to contain_file("#{data_dir}/data") }
               it { is_expected.to contain_file("#{data_dir}/logs") }
               it { is_expected.to contain_file("#{data_dir}/etc") }
               it { is_expected.to contain_file("#{data_dir}/misc") }
 
-              case facts[:kernel]
-              when 'FreeBSD'
-                it { is_expected.to contain_exec('fix shebang on artifactory.sh (4.5.1)') }
-                it { is_expected.to contain_exec('fix shebang on artifactory.sh (4.5.2)') }
-                it { is_expected.to contain_exec('fix shebang on artifactory.sh (5.1.4)') }
+              it { is_expected.to contain_exec("mktree #{install_dir}") }
+              it { is_expected.to contain_exec("mktree #{data_dir}") }
 
-                it { is_expected.to contain_file_line('artifactory rc.d entry') }
-                it { is_expected.to contain_file('/usr/local/etc/rc.d/artifactory') }
+              ['v4.5.1', 'v4.5.2', 'v5.1.4', 'v6.1.0'].each do |ver|
+                _s_verion = ver.gsub(/v/, '')
 
-              else
-                if facts[:osfamily] == 'RedHat'
-                  it { is_expected.to contain_file('/etc/rc.d/init.d/artifactory') }
-                else
-                  it { is_expected.to contain_file('/etc/init.d/artifactory') }
+                it { is_expected.to contain_artifactory__package__source(ver) }
+                it { is_expected.to contain_artifactory__links("data links for #{_s_verion}") }
+                it { is_expected.to contain_exec("tomcat permission (#{_s_verion})") }
+                it { is_expected.to contain_exec("update _real_install_dir permissions (#{_s_verion})") }
+
+                it { is_expected.to contain_archive("jfrog-artifactory-#{artifactory_type}-#{_s_verion}.zip") }
+
+                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/artifactory.default") }
+                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/etc") }
+                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/logs") }
+                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/data") }
+
+                if Version.new(_s_verion) > Version.new('5.1.1')
+                  it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/access") }
+                  it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/run") }
+                  it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/support") }
                 end
 
+                case facts[:os]['family']
+                when 'FreeBSD'
+                  it { is_expected.to contain_exec("fix shebang on artifactory.sh (#{_s_verion})") }
+                  it { is_expected.to contain_exec('set rcvar') }
+                  it { is_expected.to contain_file('/usr/local/etc/rc.d/artifactory') }
+
+                else
+                  it { is_expected.to contain_file('/etc/systemd/system/multi-user.target.wants/artifactory.service') }
+
+                end
               end
             end
           end

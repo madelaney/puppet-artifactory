@@ -1,0 +1,2697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/spec/fixtures/work-dir/cache" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="CFPropertyList (vbundled(2.3.6)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/CFPropertyList-2.3.6/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/CFPropertyList-2.3.6/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="addressable-2.5.2" />
+    <orderEntry type="module-library">
+      <library name="ansi (vbundled(1.5.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ansi-1.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ansi-1.5.0/demo" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ansi-1.5.0/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ansi-1.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ansi-1.5.0/demo" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ansi-1.5.0/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ansi-1.5.0/demo" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ansi-1.5.0/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="ast-2.4.0" />
+    <orderEntry type="module-library">
+      <library name="aws-eventstream (vbundled(1.0.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-eventstream-1.0.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-eventstream-1.0.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="aws-partitions (vbundled(1.97.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-partitions-1.97.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-partitions-1.97.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="aws-sdk-core (vbundled(3.24.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-sdk-core-3.24.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-sdk-core-3.24.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="aws-sdk-ec2 (vbundled(1.40.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-sdk-ec2-1.40.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-sdk-ec2-1.40.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="aws-sigv4 (vbundled(1.0.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-sigv4-1.0.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/aws-sigv4-1.0.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="beaker-3.37.0" />
+    <orderEntry type="module" module-name="beaker-abs-0.5.0" />
+    <orderEntry type="module" module-name="beaker-aws-0.6.0" />
+    <orderEntry type="module" module-name="beaker-docker-0.3.3" />
+    <orderEntry type="module" module-name="beaker-google-0.1.0" />
+    <orderEntry type="module" module-name="beaker-hiera-0.1.1" />
+    <orderEntry type="module" module-name="beaker-hostgenerator-1.1.14" />
+    <orderEntry type="module" module-name="beaker-openstack-0.2.0" />
+    <orderEntry type="module" module-name="beaker-puppet-0.17.1" />
+    <orderEntry type="module" module-name="beaker-puppet_install_helper-0.9.4" />
+    <orderEntry type="module" module-name="beaker-rspec-6.2.3" />
+    <orderEntry type="module" module-name="beaker-vagrant-0.5.0" />
+    <orderEntry type="module" module-name="beaker-vcloud-0.4.0" />
+    <orderEntry type="module" module-name="beaker-vmpooler-1.3.0" />
+    <orderEntry type="module" module-name="beaker-vmware-0.3.0" />
+    <orderEntry type="module-library">
+      <library name="builder (vbundled(3.2.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/rakelib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/rakelib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/builder-3.2.3/rakelib" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="byebug (vbundled(9.0.6)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="coderay (vbundled(1.1.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/coderay-1.1.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/coderay-1.1.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/coderay-1.1.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/coderay-1.1.2/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/coderay-1.1.2/bin" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="declarative-0.0.10" />
+    <orderEntry type="module" module-name="declarative-option-0.1.0" />
+    <orderEntry type="module-library">
+      <library name="deep_merge (vbundled(1.2.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/deep_merge-1.2.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/deep_merge-1.2.1/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/deep_merge-1.2.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/deep_merge-1.2.1/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/deep_merge-1.2.1/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="diff-lcs (vbundled(1.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/autotest" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/autotest" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/diff-lcs-1.3/autotest" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="docker-api (vbundled(1.34.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/docker-api-1.34.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/docker-api-1.34.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="domain_name-0.5.20180417" />
+    <orderEntry type="module" module-name="excon-0.62.0" />
+    <orderEntry type="module" module-name="facter-2.5.1" />
+    <orderEntry type="module" module-name="facterdb-0.5.2" />
+    <orderEntry type="module-library">
+      <library name="faraday (vbundled(0.15.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/faraday-0.15.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/faraday-0.15.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="fission-0.5.0" />
+    <orderEntry type="module" module-name="fog-core-1.45.0" />
+    <orderEntry type="module" module-name="fog-json-1.2.0" />
+    <orderEntry type="module" module-name="fog-openstack-0.1.27" />
+    <orderEntry type="module" module-name="formatador-0.2.5" />
+    <orderEntry type="module" module-name="google-api-client-0.23.4" />
+    <orderEntry type="module" module-name="googleauth-0.6.4" />
+    <orderEntry type="module-library">
+      <library name="hiera (vbundled(1.3.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hiera-1.3.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hiera-1.3.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hiera-1.3.4/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hiera-1.3.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hiera-1.3.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hiera-1.3.4/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hiera-1.3.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hiera-1.3.4/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hocon (vbundled(1.2.5)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hocon-1.2.5/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hocon-1.2.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hocon-1.2.5/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hocon-1.2.5/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hocon-1.2.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hocon-1.2.5/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hocon-1.2.5/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/hocon-1.2.5/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="http-cookie-1.0.3" />
+    <orderEntry type="module-library">
+      <library name="httpclient (vbundled(2.8.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/sample" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/sample" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/httpclient-2.8.3/sample" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="in-parallel-0.1.17" />
+    <orderEntry type="module-library">
+      <library name="inifile (vbundled(3.0.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/inifile-3.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/inifile-3.0.0/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/inifile-3.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/inifile-3.0.0/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/inifile-3.0.0/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="ipaddress-0.8.3" />
+    <orderEntry type="module-library">
+      <library name="jgrep (vbundled(1.5.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jgrep-1.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jgrep-1.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jgrep-1.5.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jgrep-1.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jgrep-1.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jgrep-1.5.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jgrep-1.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jgrep-1.5.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jmespath (vbundled(1.4.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jmespath-1.4.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jmespath-1.4.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="json-2.1.0" />
+    <orderEntry type="module-library">
+      <library name="json-schema (vbundled(2.8.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-schema-2.8.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-schema-2.8.0/resources" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-schema-2.8.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-schema-2.8.0/resources" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-schema-2.8.0/resources" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="json_pure-2.1.0" />
+    <orderEntry type="module" module-name="jwt-2.1.0" />
+    <orderEntry type="module" module-name="master_manipulator-2.1.1" />
+    <orderEntry type="module-library">
+      <library name="mcollective-client (vbundled(2.12.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mcollective-client-2.12.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mcollective-client-2.12.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mcollective-client-2.12.1/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mcollective-client-2.12.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mcollective-client-2.12.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mcollective-client-2.12.1/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mcollective-client-2.12.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mcollective-client-2.12.1/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="memoist-0.16.0" />
+    <orderEntry type="module" module-name="metaclass-0.0.4" />
+    <orderEntry type="module" module-name="metadata-json-lint-2.2.0" />
+    <orderEntry type="module" module-name="method_source-0.9.0" />
+    <orderEntry type="module-library">
+      <library name="mime-types (vbundled(3.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-3.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-3.1/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-3.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-3.1/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-3.1/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mime-types-data (vbundled(3.2016.0521)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-data-3.2016.0521/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-data-3.2016.0521/data" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-data-3.2016.0521/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-data-3.2016.0521/data" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mime-types-data-3.2016.0521/data" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="mini_portile2-2.3.0" />
+    <orderEntry type="module-library">
+      <library name="minitar (vbundled(0.6.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitar-0.6.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitar-0.6.1/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitar-0.6.1/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitar-0.6.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitar-0.6.1/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitar-0.6.1/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitar-0.6.1/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitar-0.6.1/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="minitest (vbundled(5.11.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitest-5.11.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitest-5.11.3/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitest-5.11.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitest-5.11.3/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/minitest-5.11.3/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="mocha-1.6.0" />
+    <orderEntry type="module-library">
+      <library name="multi_json (vbundled(1.13.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/multi_json-1.13.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/multi_json-1.13.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="multipart-post-2.0.0" />
+    <orderEntry type="module-library">
+      <library name="net-scp (vbundled(1.2.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-scp-1.2.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-scp-1.2.1/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-scp-1.2.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-scp-1.2.1/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-scp-1.2.1/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="net-ssh-4.2.0" />
+    <orderEntry type="module" module-name="net-telnet-0.2.0" />
+    <orderEntry type="module-library">
+      <library name="netrc (vbundled(0.11.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/netrc-0.11.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/netrc-0.11.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/netrc-0.11.0/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/netrc-0.11.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/netrc-0.11.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/netrc-0.11.0/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/netrc-0.11.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/netrc-0.11.0/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="nokogiri-1.8.4" />
+    <orderEntry type="module-library">
+      <library name="oga (vbundled(2.15)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/oga-2.15/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/oga-2.15/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/oga-2.15/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/oga-2.15/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/oga-2.15/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/oga-2.15/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/oga-2.15/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/oga-2.15/ext" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="open_uri_redirections-0.2.1" />
+    <orderEntry type="module" module-name="os-1.0.0" />
+    <orderEntry type="module-library">
+      <library name="parallel (vbundled(1.12.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parallel-1.12.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parallel-1.12.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="parser-2.5.1.2" />
+    <orderEntry type="module" module-name="powerpack-0.1.2" />
+    <orderEntry type="module-library">
+      <library name="pry (vbundled(0.11.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/pry-0.11.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/pry-0.11.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/pry-0.11.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/pry-0.11.3/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/pry-0.11.3/bin" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="pry-byebug (vbundled(3.4.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/pry-byebug-3.4.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/pry-byebug-3.4.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="public_suffix-3.0.2" />
+    <orderEntry type="module" module-name="puppet-3.8.7" />
+    <orderEntry type="module-library">
+      <library name="puppet-blacksmith (vbundled(4.1.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-blacksmith-4.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-blacksmith-4.1.2/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-blacksmith-4.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-blacksmith-4.1.2/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-blacksmith-4.1.2/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="puppet-lint-2.3.6" />
+    <orderEntry type="module" module-name="puppet-strings-2.1.0" />
+    <orderEntry type="module" module-name="puppet-syntax-2.4.1" />
+    <orderEntry type="module-library">
+      <library name="puppet_facts (vbundled(0.2.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/3.6" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE2.8" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.0" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.1" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.2" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.3" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/3.6" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE2.8" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.0" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.1" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.2" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.3" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/3.6" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE2.8" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.0" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.1" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.2" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet_facts-0.2.1/PE3.3" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="puppetlabs_spec_helper-2.9.1" />
+    <orderEntry type="module" module-name="rainbow-3.0.0" />
+    <orderEntry type="module" module-name="rake-12.3.1" />
+    <orderEntry type="module-library">
+      <library name="rb-readline (vbundled(0.5.5)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/bench" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/examples" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/bench" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/examples" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/bench" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rb-readline-0.5.5/examples" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="rbvmomi-1.13.0" />
+    <orderEntry type="module" module-name="representable-3.0.4" />
+    <orderEntry type="module" module-name="rest-client-2.0.2" />
+    <orderEntry type="module" module-name="retriable-3.1.2" />
+    <orderEntry type="module-library">
+      <library name="rgen (vbundled(0.8.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rgen-0.8.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rgen-0.8.2/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rgen-0.8.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rgen-0.8.2/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rgen-0.8.2/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec (vbundled(3.8.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-3.8.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-3.8.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-core (vbundled(3.8.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-core-3.8.0/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-core-3.8.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-core-3.8.0/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-core-3.8.0/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-core-3.8.0/exe" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-expectations (vbundled(3.8.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-expectations-3.8.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-expectations-3.8.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="rspec-its-1.2.0" />
+    <orderEntry type="module-library">
+      <library name="rspec-mocks (vbundled(3.8.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-mocks-3.8.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-mocks-3.8.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-puppet (vbundled(2.6.14)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-2.6.14/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-2.6.14/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-2.6.14/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-2.6.14/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-2.6.14/bin" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="rspec-puppet-facts-1.9.0" />
+    <orderEntry type="module-library">
+      <library name="rspec-support (vbundled(3.8.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-support-3.8.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-support-3.8.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="rsync-1.0.9" />
+    <orderEntry type="module-library">
+      <library name="rubocop (vbundled(0.58.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/config" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/config" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rubocop-0.58.2/config" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ruby-ll (vbundled(2.1.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-ll-2.1.2/ext" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ruby-progressbar (vbundled(1.9.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-progressbar-1.9.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ruby-progressbar-1.9.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="safe_yaml-1.0.4" />
+    <orderEntry type="module" module-name="serverspec-2.41.3" />
+    <orderEntry type="module-library">
+      <library name="sfl (vbundled(2.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/sfl-2.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/sfl-2.3/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/sfl-2.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/sfl-2.3/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/sfl-2.3/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="signet-0.8.1" />
+    <orderEntry type="module-library">
+      <library name="spdx-licenses (vbundled(1.2.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/spdx-licenses-1.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/spdx-licenses-1.2.0/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/spdx-licenses-1.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/spdx-licenses-1.2.0/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/spdx-licenses-1.2.0/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="specinfra-2.75.1" />
+    <orderEntry type="module-library">
+      <library name="stomp (vbundled(1.4.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/adhoc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/notes" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/examples" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/adhoc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/notes" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/examples" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/adhoc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/notes" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stomp-1.4.4/examples" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="stringify-hash-0.0.2" />
+    <orderEntry type="module-library">
+      <library name="systemu (vbundled(2.6.5)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/systemu-2.6.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/systemu-2.6.5/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/systemu-2.6.5/samples" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/systemu-2.6.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/systemu-2.6.5/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/systemu-2.6.5/samples" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/systemu-2.6.5/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/systemu-2.6.5/samples" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="thor (vbundled(0.20.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/thor-0.20.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/thor-0.20.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/thor-0.20.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/thor-0.20.0/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/thor-0.20.0/bin" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="trollop-2.1.3" />
+    <orderEntry type="module" module-name="uber-0.1.0" />
+    <orderEntry type="module" module-name="unf-0.1.4" />
+    <orderEntry type="module" module-name="unf_ext-0.0.7.5" />
+    <orderEntry type="module-library">
+      <library name="unicode-display_width (vbundled(1.4.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unicode-display_width-1.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unicode-display_width-1.4.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unicode-display_width-1.4.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unicode-display_width-1.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unicode-display_width-1.4.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unicode-display_width-1.4.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unicode-display_width-1.4.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unicode-display_width-1.4.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="yard (vbundled(0.9.15)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/templates" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/benchmarks" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/templates" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/benchmarks" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/templates" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/yard-0.9.15/benchmarks" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="addressable (vbundled(2.5.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/tasks" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/tasks" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/addressable-2.5.2/tasks" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ast (vbundled(2.4.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ast-2.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ast-2.4.0/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ast-2.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ast-2.4.0/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ast-2.4.0/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker (vbundled(3.37.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/acceptance" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/acceptance" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-3.37.0/acceptance" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-abs (vbundled(0.5.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-abs-0.5.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-abs-0.5.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-aws (vbundled(0.6.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/config" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/acceptance" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/config" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/acceptance" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/config" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-aws-0.6.0/acceptance" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-docker (vbundled(0.3.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/acceptance" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/acceptance" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-docker-0.3.3/acceptance" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-google (vbundled(0.1.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-google-0.1.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-google-0.1.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-google-0.1.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-google-0.1.0/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-google-0.1.0/bin" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-hiera (vbundled(0.1.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hiera-0.1.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hiera-0.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hiera-0.1.1/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hiera-0.1.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hiera-0.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hiera-0.1.1/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hiera-0.1.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hiera-0.1.1/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-hostgenerator (vbundled(1.1.14)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hostgenerator-1.1.14/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hostgenerator-1.1.14/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hostgenerator-1.1.14/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hostgenerator-1.1.14/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-hostgenerator-1.1.14/bin" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-openstack (vbundled(0.2.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-openstack-0.2.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-openstack-0.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-openstack-0.2.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-openstack-0.2.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-openstack-0.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-openstack-0.2.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-openstack-0.2.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-openstack-0.2.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-puppet (vbundled(0.17.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/setup" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/acceptance" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/setup" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/acceptance" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/setup" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet-0.17.1/acceptance" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-puppet_install_helper (vbundled(0.9.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet_install_helper-0.9.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet_install_helper-0.9.4/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet_install_helper-0.9.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet_install_helper-0.9.4/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-puppet_install_helper-0.9.4/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-rspec (vbundled(6.2.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-rspec-6.2.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-rspec-6.2.3/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-rspec-6.2.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-rspec-6.2.3/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-rspec-6.2.3/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-vagrant (vbundled(0.5.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/acceptance" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/acceptance" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vagrant-0.5.0/acceptance" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-vcloud (vbundled(0.4.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vcloud-0.4.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vcloud-0.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vcloud-0.4.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vcloud-0.4.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vcloud-0.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vcloud-0.4.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vcloud-0.4.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vcloud-0.4.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-vmpooler (vbundled(1.3.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmpooler-1.3.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmpooler-1.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmpooler-1.3.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmpooler-1.3.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmpooler-1.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmpooler-1.3.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmpooler-1.3.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmpooler-1.3.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="beaker-vmware (vbundled(0.3.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/acceptance" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/acceptance" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/beaker-vmware-0.3.0/acceptance" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.16.2, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="module-library">
+      <library name="declarative (vbundled(0.0.10)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-0.0.10/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-0.0.10/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-0.0.10/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-0.0.10/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-0.0.10/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="declarative-option (vbundled(0.1.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-option-0.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-option-0.1.0/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-option-0.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-option-0.1.0/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/declarative-option-0.1.0/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="domain_name (vbundled(0.5.20180417)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/tool" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/tool" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/domain_name-0.5.20180417/tool" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="excon (vbundled(0.62.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/benchmarks" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/benchmarks" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/excon-0.62.0/benchmarks" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="facter (vbundled(2.5.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/etc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/etc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/etc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facter-2.5.1/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="facterdb (vbundled(0.5.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/hugo" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/facts" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/images" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/hugo" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/facts" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/images" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/hugo" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/facts" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/facterdb-0.5.2/images" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fission (vbundled(0.5.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fission-0.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fission-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fission-0.5.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fission-0.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fission-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fission-0.5.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fission-0.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fission-0.5.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fog-core (vbundled(1.45.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-core-1.45.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-core-1.45.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-core-1.45.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-core-1.45.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-core-1.45.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fog-json (vbundled(1.2.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-json-1.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-json-1.2.0/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-json-1.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-json-1.2.0/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-json-1.2.0/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fog-openstack (vbundled(0.1.27)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/examples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/playbooks" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/examples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/playbooks" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/docs" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/examples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/fog-openstack-0.1.27/playbooks" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="formatador (vbundled(0.2.5)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/formatador-0.2.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/formatador-0.2.5/tests" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/formatador-0.2.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/formatador-0.2.5/tests" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/formatador-0.2.5/tests" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="google-api-client (vbundled(0.23.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/rakelib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/samples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/generated" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/rakelib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/samples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/generated" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/rakelib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/samples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/google-api-client-0.23.4/generated" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="googleauth (vbundled(0.6.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/googleauth-0.6.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/googleauth-0.6.4/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/googleauth-0.6.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/googleauth-0.6.4/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/googleauth-0.6.4/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="http-cookie (vbundled(1.0.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/http-cookie-1.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/http-cookie-1.0.3/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/http-cookie-1.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/http-cookie-1.0.3/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/http-cookie-1.0.3/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="in-parallel (vbundled(0.1.17)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/in-parallel-0.1.17/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/in-parallel-0.1.17/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/in-parallel-0.1.17/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/in-parallel-0.1.17/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/in-parallel-0.1.17/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ipaddress (vbundled(0.8.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ipaddress-0.8.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ipaddress-0.8.3/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ipaddress-0.8.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ipaddress-0.8.3/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/ipaddress-0.8.3/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="jaro_winkler (v1.5.1, ruby-2.3.3-p222) [gem]" level="application" />
+    <orderEntry type="module-library">
+      <library name="json (vbundled(2.1.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/diagrams" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/references" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/diagrams" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/references" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/diagrams" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/references" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="json_pure (vbundled(2.1.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/diagrams" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/references" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/diagrams" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/references" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/diagrams" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/json_pure-2.1.0/references" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jwt (vbundled(2.1.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jwt-2.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jwt-2.1.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jwt-2.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jwt-2.1.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/jwt-2.1.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="master_manipulator (vbundled(2.1.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/master_manipulator-2.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/master_manipulator-2.1.1/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/master_manipulator-2.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/master_manipulator-2.1.1/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/master_manipulator-2.1.1/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="memoist (vbundled(0.16.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/memoist-0.16.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/memoist-0.16.0/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/memoist-0.16.0/script" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/memoist-0.16.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/memoist-0.16.0/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/memoist-0.16.0/script" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/memoist-0.16.0/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/memoist-0.16.0/script" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="metaclass (vbundled(0.0.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metaclass-0.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metaclass-0.0.4/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metaclass-0.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metaclass-0.0.4/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metaclass-0.0.4/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="metadata-json-lint (vbundled(2.2.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/tests" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/tests" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/metadata-json-lint-2.2.0/tests" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="method_source (vbundled(0.9.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/method_source-0.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/method_source-0.9.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/method_source-0.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/method_source-0.9.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/method_source-0.9.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mini_portile2 (vbundled(2.3.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mini_portile2-2.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mini_portile2-2.3.0/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mini_portile2-2.3.0/concourse" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mini_portile2-2.3.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mini_portile2-2.3.0/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mini_portile2-2.3.0/concourse" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mini_portile2-2.3.0/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mini_portile2-2.3.0/concourse" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mocha (vbundled(1.6.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/gemfiles" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/yard-templates" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/gemfiles" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/yard-templates" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/gemfiles" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/mocha-1.6.0/yard-templates" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="multipart-post (vbundled(2.0.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/multipart-post-2.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/multipart-post-2.0.0/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/multipart-post-2.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/multipart-post-2.0.0/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/multipart-post-2.0.0/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="net-ssh (vbundled(4.2.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-ssh-4.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-ssh-4.2.0/support" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-ssh-4.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-ssh-4.2.0/support" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-ssh-4.2.0/support" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="net-telnet (vbundled(0.2.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-telnet-0.2.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-telnet-0.2.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-telnet-0.2.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-telnet-0.2.0/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/net-telnet-0.2.0/bin" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="nokogiri (vbundled(1.8.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/patches" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/suppressions" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/patches" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/suppressions" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/test" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/patches" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.4/suppressions" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="open_uri_redirections (vbundled(0.2.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/open_uri_redirections-0.2.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/open_uri_redirections-0.2.1/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/open_uri_redirections-0.2.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/open_uri_redirections-0.2.1/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/open_uri_redirections-0.2.1/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="os (vbundled(1.0.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/os-1.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/os-1.0.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/os-1.0.0/autotest" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/os-1.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/os-1.0.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/os-1.0.0/autotest" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/os-1.0.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/os-1.0.0/autotest" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="parser (vbundled(2.5.1.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/parser-2.5.1.2/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="powerpack (vbundled(0.1.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/powerpack-0.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/powerpack-0.1.2/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/powerpack-0.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/powerpack-0.1.2/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/powerpack-0.1.2/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="public_suffix (vbundled(3.0.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/public_suffix-3.0.2/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="puppet (vbundled(3.8.7)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/man" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/conf" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/examples" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/man" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/conf" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/examples" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/man" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/conf" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-3.8.7/examples" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="puppet-lint (vbundled(2.3.6)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-lint-2.3.6/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-lint-2.3.6/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-lint-2.3.6/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-lint-2.3.6/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-lint-2.3.6/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-lint-2.3.6/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-lint-2.3.6/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-lint-2.3.6/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="puppet-strings (vbundled(2.1.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-strings-2.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-strings-2.1.0/misc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-strings-2.1.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-strings-2.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-strings-2.1.0/misc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-strings-2.1.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-strings-2.1.0/misc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-strings-2.1.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="puppet-syntax (vbundled(2.4.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-syntax-2.4.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-syntax-2.4.1/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-syntax-2.4.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-syntax-2.4.1/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppet-syntax-2.4.1/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="puppetlabs_spec_helper (vbundled(2.9.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppetlabs_spec_helper-2.9.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/puppetlabs_spec_helper-2.9.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rainbow (vbundled(3.0.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rainbow-3.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rainbow-3.0.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rainbow-3.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rainbow-3.0.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rainbow-3.0.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rake (vbundled(12.3.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/doc" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rake-12.3.1/exe" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rbvmomi (vbundled(1.13.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/devel" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/examples" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/devel" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/examples" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/devel" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rbvmomi-1.13.0/examples" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="representable (vbundled(3.0.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/representable-3.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/representable-3.0.4/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/representable-3.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/representable-3.0.4/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/representable-3.0.4/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rest-client (vbundled(2.0.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rest-client-2.0.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rest-client-2.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rest-client-2.0.2/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rest-client-2.0.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rest-client-2.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rest-client-2.0.2/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rest-client-2.0.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rest-client-2.0.2/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="retriable (vbundled(3.1.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/retriable-3.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/retriable-3.1.2/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/retriable-3.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/retriable-3.1.2/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/retriable-3.1.2/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-its (vbundled(1.2.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/script" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/features" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/script" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/features" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-its-1.2.0/script" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-puppet-facts (vbundled(1.9.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-facts-1.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-facts-1.9.0/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-facts-1.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-facts-1.9.0/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rspec-puppet-facts-1.9.0/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rsync (vbundled(1.0.9)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rsync-1.0.9/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rsync-1.0.9/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rsync-1.0.9/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rsync-1.0.9/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/rsync-1.0.9/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="safe_yaml (vbundled(1.0.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/safe_yaml-1.0.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/safe_yaml-1.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/safe_yaml-1.0.4/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/safe_yaml-1.0.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/safe_yaml-1.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/safe_yaml-1.0.4/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/safe_yaml-1.0.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/safe_yaml-1.0.4/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="serverspec (vbundled(2.41.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/serverspec-2.41.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/serverspec-2.41.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/serverspec-2.41.3/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/serverspec-2.41.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/serverspec-2.41.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/serverspec-2.41.3/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/serverspec-2.41.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/serverspec-2.41.3/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="signet (vbundled(0.8.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/website" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/website" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/signet-0.8.1/website" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="specinfra (vbundled(2.75.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/specinfra-2.75.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/specinfra-2.75.1/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/specinfra-2.75.1/examples" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/specinfra-2.75.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/specinfra-2.75.1/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/specinfra-2.75.1/examples" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/specinfra-2.75.1/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/specinfra-2.75.1/examples" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="stringify-hash (vbundled(0.0.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stringify-hash-0.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stringify-hash-0.0.2/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stringify-hash-0.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stringify-hash-0.0.2/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/stringify-hash-0.0.2/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="trollop (vbundled(2.1.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/trollop-2.1.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/trollop-2.1.3/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/trollop-2.1.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/trollop-2.1.3/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/trollop-2.1.3/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="uber (vbundled(0.1.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/uber-0.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/uber-0.1.0/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/uber-0.1.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/uber-0.1.0/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/uber-0.1.0/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="unf (vbundled(0.1.4)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf-0.1.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf-0.1.4/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf-0.1.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf-0.1.4/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf-0.1.4/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="unf_ext (vbundled(0.0.7.5)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="2" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.5/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.5/test" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.5/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.5/test" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.5/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.3.0/gems/unf_ext-0.0.7.5/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+  </component>
+</module>

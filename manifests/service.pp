@@ -11,68 +11,64 @@
 # @param [String] install_dir
 #
 class artifactory::service(
-  $service_name    = $::artifactory::params::service_name,
-  $service_enable  = true,
-  $service_ensure  = running,
-  $service_dir     = $::artifactory::service_dir,
-  $service_manage  = true,
-  $service_restart = undef,
-  $install_dir     = $::artifactory::install_dir
+  String $service_name,
+  String $ensure,
+  Boolean $enabled,
+  Boolean $manage,
+  Artifactory::Service $service_provider
 ) {
-  validate_bool($service_enable)
-  validate_bool($service_manage)
-
-  case $service_ensure {
-    true, false, 'running', 'stopped': {
-      $_service_ensure = $service_ensure
+  assert_private()
+  if $manage {
+    case $service_provider {
+      'sysv': {
+        $service_dir = '/etc/init.d'
+        $target_file = $service_name
+        $file_mode = '0755'
+      }
+      'systemd': {
+        $service_dir = '/etc/systemd/system/multi-user.target.wants'
+        $target_file = "${service_name}.service"
+        $file_mode = '0644'
+      }
+      'freebsd': {
+        $service_dir = '/usr/local/etc/rc.d'
+        $target_file = $service_name
+        $file_mode = '0755'
+      }
+      default: {
+        fail("Unsupported init system ${service_provider}")
+      }
     }
-    default: {
-      $_service_ensure = undef
-    }
-  }
 
-  $artifactory_home = "${install_dir}/current"
-
-  $service_hasrestart = $service_restart == undef
-
-  file {
-    "${service_dir}/artifactory":
+    file {
+      "${service_dir}/${target_file}":
         ensure  => file,
-        mode    => '0755',
-        content => template("artifactory/rc.d-${::osfamily}.erb")
-  }
+        mode    => $file_mode,
+        content => template("artifactory/init/${service_provider}.${::facts['os']['family']}.erb")
+    }
 
-  if $service_manage {
-    if $::osfamily == 'FreeBSD' {
-      case $service_ensure {
-        true, 'running': {
-          $_rc_ensure = 'YES'
-        }
-        default: {
-          $_rc_ensure = NO
-        }
+    if $facts['os']['family'] == 'FreeBSD' {
+      $_rc_ensure = $enabled ? {
+        false    => 'NO',
+        default  => 'YES'
       }
 
-      file_line {
-        "${service_name} rc.d entry":
-          ensure            => present,
-          path              => '/etc/rc.conf',
-          line              => "${service_name}_enable=${_rc_ensure}",
-          match             => "^${service_name}_enable=",
-          match_for_absence => true,
-          before            => Service['artifactory'];
+      exec {
+        'set rcvar':
+          command => "sysrc ${service_name}_enable=${_rc_ensure}",
+          path    => ['/bin', '/usr/sbin'],
+          unless  => "test sysrc -c ${service_name}_enable=${_rc_ensure}",
+          before  => Service[$service_name];
       }
     }
 
     service {
-      'artifactory':
-        ensure     => $_service_ensure,
-        name       => $service_name,
-        enable     => $service_enable,
-        restart    => $service_restart,
-        hasrestart => $service_hasrestart,
-        require    => File["${service_dir}/artifactory"],
-        subscribe  => File["${service_dir}/artifactory"];
+      $service_name:
+        ensure     => $ensure,
+        enable     => $enabled,
+        provider   => $service_provider,
+        require    => File["${service_dir}/${target_file}"],
+        subscribe  => File["${service_dir}/${target_file}"];
     }
   }
 }

@@ -1,0 +1,7 @@
+---
+artifactory::oss_package_name: jfrog-artifactory-oss
+artifactory::pro_package_name: jfrog-artifactory-pro
+artifactory::data_dir: /var/opt/jfrog/artifactory
+artifactory::service_dir: /etc/init.d
+artifactory::update_shebang: false
+artifactory::java_home: /usr/lib/jvm/java-8-openjdk-amd64

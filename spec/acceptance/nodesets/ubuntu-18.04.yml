@@ -1,0 +1,11 @@
+HOSTS:
+  ubuntu-1804-x64:
+    roles:
+      - agents
+      - frictionless
+    platform: ubuntu-18.04-64
+    box: ubuntu/bionic64
+    hypervisor: vagrant
+CONFIG:
+  log_level: verbose
+  type: foss

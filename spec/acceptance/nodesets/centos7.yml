@@ -1,0 +1,11 @@
+HOSTS:
+  centos7:
+    roles:
+      - agents
+      - frictionless
+    platform: el-7-x86_64
+    box: centos/7
+    hypervisor: vagrant
+CONFIG:
+  log_level: verbose
+  type: foss

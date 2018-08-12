@@ -1,0 +1,19 @@
+[Unit]
+Description=Setup Systemd script for Artifactory in Tomcat Servlet Engine
+After=network.target
+
+[Service]
+Type=forking
+GuessMainPID=yes
+Restart=always
+RestartSec=5
+PIDFile=<%= scope.lookupvar('artifactory::install_dir') %>/current/run/artifactory.pid
+ExecStart=<%= scope.lookupvar('artifactory::install_dir') %>/current/bin/artifactoryctl start
+ExecStop=<%= scope.lookupvar('artifactory::install_dir') %>/current/bin/artifactoryctl stop
+User=<%= scope.lookupvar('artifactory::user') %>
+Group=<%= scope.lookupvar('artifactory::group') %>
+
+[Install]
+WantedBy=multi-user.target
+Alias=artifactory
+

@@ -1,6 +1,4 @@
-#### Table of Contents
-
-```This module is based off of the offical module by
+# Table of Contents
 
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
@@ -31,7 +29,6 @@ class {
   '::artifactory':
     license       => '<license>',
     type          => 'pro',
-    install_type  => 'source',
     version       => 'present',
     sources       => {
       'v4.5.1' => {
@@ -44,7 +41,7 @@ class {
 
 If you need to add database connectivity instantiate with the required parameters:
 
-~~~
+```
 class { '::artifactory_pro':
   license_key                    => 'abc123',
   db_type                        => 'mysql',
@@ -53,7 +50,7 @@ class { '::artifactory_pro':
   db_username                    => 'my_username',
   db_password                    => 'efw23gn2j3',
 }
-~~~
+```
 
 ## Usage
 
@@ -65,18 +62,17 @@ All interaction for the server is done via `::artifactory_pro`.
 
 #### Public classes
 
-* [`artifactory`](#artifactoryserver): Installs and configures Artifactory.
+* `artifactory` Installs and configures Artifactory.
 
 #### Private classes
 
-* `artifactory_pro::config`: Configures Artifactory Pro.
-* `artifactory_pro::post_config`: Does pro post configuration.
+* `artifactory::config`: Configures Artifactory Pro.
 
 ### Defines
 
 #### Public defines
 
-* `artifactory_pro::plugin`: Adds a groovy plugin to the server
+* `artifactory::plugin`: Adds a groovy plugin to the server
 
 ### Parameters
 
@@ -87,30 +83,6 @@ All interaction for the server is done via `::artifactory_pro`.
 Sets the name of the Artifactory license key'.
 
 This is required.
-
-##### `yum_name`
-
-Sets the name of the yum repository. Defaults to 'bintray-jfrog-artifactory-pro-rpms'.
-
-This can be changed if Artifactory needs to be setup from a different repository. Typically this is done if an organization has a 'trusted' yum repo.
-
-##### `yum_baseurl`
-
-Sets the base url of the yum repository to name. Defaults to 'http://jfrog.bintray.com/artifactory-pro-rpms'.
-
-This can be changed if Artifactory needs to be setup from a different repository. Typically this is done if an organization has a 'trusted' yum repo.
-
-##### `package_name`
-
-Sets the package name to install. Defaults to 'jfrog-artifactory-pro'.
-
-This can be changed if Artifactory needs to install a differently named package. Possibly needed if na organization creates their own Artifactory package.
-
-##### `manage_java`
-
-Tells the module whether or not to manage the java class. This defaults to true. Usually this is what you want.
-
-If your organization actively manages the java installs across your environment set this to false.
 
 ##### `jdbc_driver_url`
 
@@ -192,7 +164,3 @@ This module has been tested on:
 Since your module is awesome, other users will want to play with it. Let them know what the ground rules for contributing are.
 
 ### Authors
-
-This module is based on work by Autostructure. The following contributors have contributed to this module:
-
-* Bryan Belanger

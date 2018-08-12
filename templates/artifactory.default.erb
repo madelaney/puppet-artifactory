@@ -1,0 +1,12 @@
+# This file is managed by Puppet, do not edit by hand.
+export ARTIFACTORY_USER=<%= @owner %>
+export ARTIFACTORY_HOME=<%= scope.lookupvar('artifactory::install_dir') %>/current
+export ARTIFACTORY_PID=<%= scope.lookupvar('artifactory::data_dir') %>/run/artifactory.pid
+
+export JAVA_HOME=<%= scope.lookupvar('artifactory::java_home') %>
+export TOMCAT_HOME=${ARTIFACTORY_HOME}/tomcat
+
+# export JAVA_OPTIONS="-server -Xms512m -Xmx2g -Xss256k -XX:+UseG1GC -XX:OnOutOfMemoryError=\"kill -9 %p\""
+# export JAVA_OPTIONS="$JAVA_OPTIONS -Djruby.compile.invokedynamic=false -Dfile.encoding=UTF8 -Dartdist=zip -Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true -Djava.security.egd=file:/dev/./urandom"
+
+export JAVA_OPTIONS="<%= @_real_java_opts.join(' ') %>"

@@ -3,21 +3,21 @@
 # Defines a plugin to be installed in Artifactory
 #
 # @param [String] url
-# @param [String] owner
+# @param [String] user
 # @param [String] group
 #
 #
 define artifactory::plugin(
-  $url,
-  $owner = $::artifactory::owner,
-  $group = $::artifactory::group
+  String $url,
+  String $user  = $::artifactory::user,
+  String $group = $::artifactory::group
 ) {
-  $plugin_name =  regsubst($url, '.+\/([^\/]+)$', '\1')
-  wget::fetch {
+  archive {
     $title:
-      source      => $url,
-      destination => "${::artifactory::data_dir}/etc/plugins/",
-      timeout     => 0,
-      verbose     => false,
+      source   => $url,
+      path     =>"${::artifactory::data_dir}/etc/plugins/${title}",
+      user     => $user,
+      group    => $group;
+
   }
 }

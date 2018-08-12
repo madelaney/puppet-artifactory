@@ -1,11 +1,13 @@
 ---
-:backends:
-  - yaml
+version: 5
 
-:yaml:
-  :datadir: './spec/fixtures/hieradata'
+defaults:
+  datadir: 'hieradata'
+  data_hash: 'yaml_data'
 
-:hierarchy:
-  - '%{::clientcert}'
-  - '%{::kernel}'
-  - 'default'
+hierarchy:
+  - name: 'Operating System Family'
+    path: "%{facts.os.kernel}.yaml"
+
+  - name: 'default values'
+    path: 'default.yaml'

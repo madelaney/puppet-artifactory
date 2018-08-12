@@ -1,7 +1,6 @@
 # artifactory::install
 #
 #
-# @param [String] install_type
 # @param [String] artifactory_home
 # @param [String] install_dir
 # @param [String] user
@@ -11,46 +10,85 @@
 # @param [String] data_dir
 # @param [Boolean] manage_user
 #
-class artifactory::install(
-  $install_type           = $::artifactory::install_type,
-  $artifactory_home       = $::artifactory::artifactory_home,
-  $install_dir            = $::artifactory::install_dir,
-  $user                   = $::artifactory::user,
-  $group                  = $::artifactory::group,
-  $sources                = $::artifactory::sources,
-  $version                = present,
-  $data_dir               = $::artifactory::data_dir,
-  $manage_user            = $::artifactory::manage_user
+class artifactory::install (
+  Stdlib::Absolutepath $install_dir = $::artifactory::install_dir,
+  String $user                      = $::artifactory::user,
+  String $group                     = $::artifactory::group,
+  Hash $sources                     = $::artifactory::sources,
+  Variant $data_dir                 = $::artifactory::data_dir,
+  Boolean $manage_user              = $::artifactory::manage_user
 ) {
-  validate_hash($sources)
+  if empty($sources) {
+    fail('Using source install but source version is empty')
+  }
+
+  assert_private()
+
+  exec {
+    "mktree ${data_dir}":
+      command   => "mkdir -vp ${data_dir}",
+      path      => ['/bin', '/usr/bin'],
+      creates   => $data_dir,
+      user      => 'root',
+      group     => 'root',
+      logoutput => on_failure,
+      before    => Class['::artifactory::config'];
+  }
 
   $data_dir_list = [
+    "${data_dir}/data",
     "${data_dir}/etc",
     "${data_dir}/etc/plugins",
     "${data_dir}/logs",
-    "${data_dir}/misc"
+    "${data_dir}/misc",
+    "${data_dir}/support",
+    "${data_dir}/run",
+    "${data_dir}/access"
   ]
 
   file {
-    $data_dir:
-      ensure => directory,
-      owner  => $user,
-      group  => $group,
-      mode   => '0750';
-
-    "${data_dir}/data":
-      ensure  => directory,
-      owner   => $user,
-      group   => $group,
-      mode    => '0750',
-      require => File[$data_dir];
-
     $data_dir_list:
       ensure  => directory,
       owner   => $user,
       group   => $group,
       mode    => '0750',
-      require => File[$data_dir];
+      require => Exec["mktree ${data_dir}"];
+
+    "${data_dir}/etc/mimetypes.xml":
+      ensure  => file,
+      replace => false,
+      owner   => $user,
+      group   => $group,
+      mode    => '0640',
+      source  => 'puppet:///modules/artifactory/etc/mimetypes.xml',
+      require => File["${data_dir}/etc"];
+
+    "${data_dir}/etc/logback.xml":
+      ensure  => file,
+      replace => false,
+      owner   => $user,
+      group   => $group,
+      mode    => '0640',
+      source  => 'puppet:///modules/artifactory/etc/logback.xml',
+      require => File["${data_dir}/etc"];
+
+    "${data_dir}/etc/artifactory.config.xml":
+      ensure  => file,
+      replace => false,
+      owner   => $user,
+      group   => $group,
+      mode    => '0640',
+      source  => 'puppet:///modules/artifactory/etc/artifactory.config.xml',
+      require => File["${data_dir}/etc"];
+
+    "${data_dir}/etc/binarystore.xml":
+      ensure  => file,
+      replace => false,
+      owner   => $user,
+      group   => $group,
+      mode    => '0640',
+      source  => 'puppet:///modules/artifactory/etc/binarystore.xml',
+      require => File["${data_dir}/etc"];
   }
 
   if $manage_user {
@@ -65,50 +103,32 @@ class artifactory::install(
     }
   }
 
-  if $install_type != 'source' {
-    $package_name = $::artifactory::type ? {
-      'pro'   => $::artifactory::pro_package_name,
-      default => $::artifactory::oss_package_name
-    }
+  file {
+    $install_dir:
+      ensure => directory,
+      owner  => $user,
+      group  => $group,
+      mode   => '0750';
 
-    class {
-      "::artifactory::repo::${install_type}":
-        before => Package[$package_name];
-    }
-
-    package {
-      $package_name:
-        ensure => $version,
-        before => Class['::artifactory::config'];
-    }
+    "${install_dir}/.archives":
+      ensure => directory,
+      require => File[$install_dir]
   }
-  else {
-    if empty($sources) {
-      fail('Using source install but source version is empty')
-    }
 
-    file {
-      $install_dir:
-        ensure => directory,
-        owner  => $user,
-        group  => $group,
-        mode   => '0750';
-    }
-
-    exec {
-      "mktree ${install_dir}":
-        command => "mkdir -vp ${install_dir}",
-        path    => ['/bin', '/usr/bin'],
-        creates => $install_dir,
-        user    => 'root',
-        group   => $group,
-        before  => Class['::artifactory::config'];
-    }
-
-    $defaults = {
-      before => Class['::artifactory::config']
-    }
-
-    create_resources('::artifactory::package::source', $sources, $defaults)
+  exec {
+    "mktree ${install_dir}":
+      command   => "mkdir -vp ${install_dir}",
+      path      => ['/bin', '/usr/bin'],
+      creates   => $install_dir,
+      user      => 'root',
+      group     => $group,
+      logoutput => on_failure,
+      before    => [Class['::artifactory::config'], File[$install_dir]];
   }
+
+  $defaults = {
+    before  => Class['::artifactory::config']
+  }
+
+  create_resources('::artifactory::package::source', $sources, $defaults)
 }

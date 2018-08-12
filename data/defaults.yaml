@@ -1,0 +1,45 @@
+---
+artifactory::version: '4.10.0'
+artifactory::license: null
+artifactory::type: oss
+artifactory::manage_user: true
+artifactory::source_download_url: null
+
+artifactory::service::service_name: artifactory
+artifactory::service::service_provider: systemd
+artifactory::service::manage: true
+artifactory::service::enabled: true
+artifactory::service::ensure: running
+
+artifactory::user: artifactory
+artifactory::group: artifactory
+artifactory::db_type: derby
+artifactory::db_name: artifactory
+artifactory::db_host: localhost
+artifactory::db_driver: null
+artifactory::db_username: null
+artifactory::db_password: null
+artifactory::db_port: null
+artifactory::db_properties: {}
+artifactory::java_xmx: 2g
+artifactory::java_xms: 512m
+artifactory::plugins: {}
+artifactory::plugins_repo: null
+artifactory::install_dir: /opt/artifactory
+artifactory::manage_install_dir: true
+artifactory::manage_arifactory_home: true
+artifactory::sources: {}
+artifactory::java_opts:
+  - '-Xss256k'
+  - '-XX:+UseG1GC'
+  - '-XX:OnOutOfMemoryError=\"kill -9 %p\"'
+  - '-Djruby.compile.invokedynamic=false'
+  - '-Dfile.encoding=UTF8'
+  - '-Dartdist=zip'
+  - '-Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true'
+  - '-Djava.security.egd=file:/dev/./urandom'
+artifactory::storage_properties:
+  'binary_provider_type': 'filesystem'
+  'binary.provider.cache.maxSize': '5GB'
+artifactory::system_properties:
+  'artifactory.plugin.scripts.refreshIntervalSecs': 60

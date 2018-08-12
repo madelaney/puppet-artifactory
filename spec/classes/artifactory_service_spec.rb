@@ -5,8 +5,7 @@ describe 'artifactory' do
     {
       'ensure'       => 'present',
       'license'      => 'my_license_key',
-      'type'         => 'pro',
-      'install_type' => 'source'
+      'type'         => 'pro'
     }
   end
 
@@ -19,7 +18,7 @@ describe 'artifactory' do
         include_examples :compile
 
         context 'artifactory should enable a service' do
-          it { is_expected.to contain_class('artifactory::service').that_requires('artifactory::install') }
+          it { is_expected.to contain_class('artifactory::service').that_requires('Class[artifactory::install]') }
         end
       end
     end

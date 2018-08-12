@@ -7,7 +7,6 @@ describe 'artifactory' do
         {
           'ensure'       => 'present',
           'license'      => 'my_license_key',
-          'install_type' => 'source',
           'type'         => artifactory_type,
           'user'         => 'jfrog',
           'group'        => 'jfrog'
@@ -23,7 +22,7 @@ describe 'artifactory' do
                 'db_driver'   => 'org.postgresql.Driver',
                 'db_type'     => 'postgresql',
                 'db_host'     => 'localhost',
-                'db_port'     => '9876',
+                'db_port'     => 9876,
                 'db_name'     => 'artifactory2',
                 'db_username' => 'db-username',
                 'db_password' => 'superPassword'
@@ -31,24 +30,28 @@ describe 'artifactory' do
             end
 
             case facts[:kernel]
-              when 'FreeBSD'
-                install_dir = '/usr/local/artifactory'
-              else
-                install_dir = '/opt/jfrog/artifactory'
+            when 'FreeBSD'
+              install_dir = '/usr/local/artifactory'
+            else
+              install_dir = '/opt/artifactory'
             end
 
             include_examples :compile
 
             context 'should install postgre jdbc driver' do
-              it { is_expected.to contain_artifactory__db__postgresql('artifactory 4.5.1 postgresql 9.4.1211').that_comes_before('artifactory::service') }
-              it { is_expected.to contain_artifactory__db__postgresql('artifactory 4.5.2 postgresql 9.4.1211').that_comes_before('artifactory::service') }
+              it { is_expected.to contain_artifactory__db__postgresql('artifactory 4.5.1 postgresql 9.4.1211').that_comes_before('Service[artifactory]') }
+              it { is_expected.to contain_artifactory__db__postgresql('artifactory 4.5.2 postgresql 9.4.1211').that_comes_before('Service[artifactory]') }
             end
 
             context 'should assign the currect user' do
+              it { is_expected.to contain_user('jfrog') }
+              it { is_expected.to contain_group('jfrog') }
               it {
-                puts params
-                is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_user('jfrog') }
-              it { is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/tomcat/lib/postgresql-9.4.1211.jar").with_user('jfrog') }
+                is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.1/tomcat/lib/postgresql-9.4.1211.jar").with_user('jfrog')
+              }
+              it {
+                is_expected.to contain_archive("#{install_dir}/artifactory-#{artifactory_type}-4.5.2/tomcat/lib/postgresql-9.4.1211.jar").with_user('jfrog')
+              }
             end
 
             context 'should assign the correct group' do
