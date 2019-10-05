@@ -111,7 +111,7 @@ class artifactory::install (
       mode   => '0750';
 
     "${install_dir}/.archives":
-      ensure => directory,
+      ensure  => directory,
       require => File[$install_dir]
   }
 

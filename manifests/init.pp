@@ -71,14 +71,14 @@ class artifactory(
     fail('You cannot set both pluing sources, and plugins repos')
   }
 
-  class{'::artifactory::install': } ->
-  class{'::artifactory::config': } ->
-  class{'::artifactory::plugins': } ->
-  class{'::artifactory::service': }
+  class{'::artifactory::install': }
+    -> class{'::artifactory::config': }
+    -> class{'::artifactory::plugins': }
+    -> class{'::artifactory::service': }
 
-  Class['::artifactory::config'] ~>
-  Class['::artifactory::service']
+  Class['::artifactory::config']
+    ~> Class['::artifactory::service']
 
-  Class['::artifactory::plugins'] ~>
-  Class['::artifactory::service']
+  Class['::artifactory::plugins']
+    ~> Class['::artifactory::service']
 }

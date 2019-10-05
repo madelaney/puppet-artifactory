@@ -14,10 +14,10 @@ define artifactory::plugin(
 ) {
   archive {
     $title:
-      source   => $url,
-      path     =>"${::artifactory::data_dir}/etc/plugins/${title}",
-      user     => $user,
-      group    => $group;
+      source => $url,
+      path   =>"${::artifactory::data_dir}/etc/plugins/${title}",
+      user   => $user,
+      group  => $group;
 
   }
 }

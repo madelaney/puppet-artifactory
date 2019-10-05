@@ -75,9 +75,9 @@ define artifactory::package::source(
 
     unless $facts['os']['kernel'] == 'FreeBSD' {
       $_real_java_opts = concat(['-server',
-                                 "-Xms${artifactory::java_xms}",
-                                 "-Xmx${artifactory::java_xmx}"],
-                                 $artifactory::java_opts)
+                                  "-Xms${artifactory::java_xms}",
+                                  "-Xmx${artifactory::java_xmx}"],
+                                  $artifactory::java_opts)
       file {
         "${_real_install_dir}/artifactory.default":
           ensure  => file,

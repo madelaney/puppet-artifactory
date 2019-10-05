@@ -64,11 +64,11 @@ class artifactory::service(
 
     service {
       $service_name:
-        ensure     => $ensure,
-        enable     => $enabled,
-        provider   => $service_provider,
-        require    => File["${service_dir}/${target_file}"],
-        subscribe  => File["${service_dir}/${target_file}"];
+        ensure    => $ensure,
+        enable    => $enabled,
+        provider  => $service_provider,
+        require   => File["${service_dir}/${target_file}"],
+        subscribe => File["${service_dir}/${target_file}"];
     }
   }
 }
