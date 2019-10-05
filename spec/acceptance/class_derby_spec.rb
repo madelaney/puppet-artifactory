@@ -1,3 +1,4 @@
+require 'beaker-puppet'
 require 'spec_helper_acceptance'
 
 describe 'artifactory class' do

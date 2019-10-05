@@ -6,3 +6,8 @@ fixtures:
     java: "puppetlabs/java"
   symlinks:
     artifactory: "#{source_dir}"
+puppet_version: '>= 6.0.0'
+flags: --verbose
+env:
+  - FUTURE_PARSER=yes CI_NODE_TOTAL=2 CI_NODE_INDEX=1
+  - FUTURE_PARSER=yes CI_NODE_TOTAL=2 CI_NODE_INDEX=2

@@ -7,7 +7,7 @@ require 'beaker/module_install_helper'
 # https://github.com/puppetlabs/beaker-rspec
 # run_puppet_install_helper unless ENV['BEAKER_provision'] == 'no' || ENV['BEAKER_set'] =~ /freebsd/
 
-run_puppet_install_helper
+# run_puppet_install_helper 'agent', '6.0.0'
 
 install_module
 install_module_dependencies
