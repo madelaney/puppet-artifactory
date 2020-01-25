@@ -3,9 +3,15 @@ require 'spec_helper'
 describe 'artifactory' do
   let :default_params do
     {
-      'ensure'       => 'present',
-      'license'      => 'my_license_key',
-      'type'         => 'pro'
+      'ensure'  => 'present',
+      'license' => 'my_license_key',
+      'type'    => 'pro',
+      'sources' => {
+        'v6.1.0' => {
+          'ensure'  => 'present',
+          'version' => '6.1.0'
+        }
+      }
     }
   end
 

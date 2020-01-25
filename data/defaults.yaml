@@ -4,13 +4,11 @@ artifactory::license: null
 artifactory::type: oss
 artifactory::manage_user: true
 artifactory::source_download_url: null
-
 artifactory::service::service_name: artifactory
 artifactory::service::service_provider: systemd
 artifactory::service::manage: true
 artifactory::service::enabled: true
 artifactory::service::ensure: running
-
 artifactory::user: artifactory
 artifactory::group: artifactory
 artifactory::db_type: derby
