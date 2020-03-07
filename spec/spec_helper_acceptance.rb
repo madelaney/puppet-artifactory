@@ -22,7 +22,7 @@ RSpec.configure do |c|
   # Configure all nodes in nodeset
   c.before :suite do
     hosts.each do |host|
-      if /freebsd/i =~ host
+      if %r{freebsd}i =~ host
         on host, 'pkg install -y ruby23-gems'
         on host, 'pkg install -y puppet4'
 

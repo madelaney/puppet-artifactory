@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'artifactory' do
   ['oss', 'pro'].each do |artifactory_type|
-    context "#{artifactory_type}" do
+    context artifactory_type.to_s do
       let :default_params do
         {
           'ensure'       => 'present',
@@ -10,21 +10,21 @@ describe 'artifactory' do
           'data_dir'     => '/opt/artifactory-data',
           'plugins'      => {
             'download-directory' => {
-              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/cleanup/buildCleanup/buildCleanup.groovy'
+              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/cleanup/buildCleanup/buildCleanup.groovy',
             },
             'build-properties' => {
-              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/build/buildPropertySetter/buildPropertySetter.groovy'
+              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/build/buildPropertySetter/buildPropertySetter.groovy',
             },
             'layout-properties' => {
-              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/storage/layoutProperties/layoutProperties.groovy'
-            }
+              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/storage/layoutProperties/layoutProperties.groovy',
+            },
           },
           'sources' => {
             'v6.1.0' => {
               'ensure'  => 'present',
-              'version' => '6.1.0'
-            }
-          }
+              'version' => '6.1.0',
+            },
+          },
         }
       end
 
@@ -36,16 +36,16 @@ describe 'artifactory' do
 
             custom_data_dir = '/opt/artifactory-data'
 
-            case facts[:os]['family']
-            when 'FreeBSD'
-              data_dir = '/usr/local/etc/artifactory'
-            when 'RedHat'
-              data_dir = '/var/lib/artifactory'
-            else
-              data_dir = '/var/opt/jfrog/artifactory'
-            end
+            data_dir = case facts[:os]['family']
+                       when 'FreeBSD'
+                         '/usr/local/etc/artifactory'
+                       when 'RedHat'
+                         '/var/lib/artifactory'
+                       else
+                         '/var/opt/jfrog/artifactory'
+                       end
 
-            it { is_expected.to contain_exec("mktree /opt/artifactory-data") }
+            it { is_expected.to contain_exec('mktree /opt/artifactory-data') }
 
             it { is_expected.to contain_file("#{custom_data_dir}/etc/mimetypes.xml") }
             it { is_expected.to contain_file("#{custom_data_dir}/etc/logback.xml") }
@@ -57,12 +57,11 @@ describe 'artifactory' do
             it { is_expected.to contain_file("#{custom_data_dir}/etc/artifactory.lic").with_ensure('absent') }
             it { is_expected.to contain_file("#{custom_data_dir}/etc/plugins") }
 
-            it { is_expected.to_not contain_file("#{data_dir}/etc/artifactory.system.properties") }
-            it { is_expected.to_not contain_file("#{data_dir}/etc/storage.properties") }
-            it { is_expected.to_not contain_file("#{data_dir}/etc/db.properties") }
-            it { is_expected.to_not contain_file("#{data_dir}/etc/artifactory.lic").with_ensure('absent') }
-            it { is_expected.to_not contain_file("#{data_dir}/etc/plugins") }
-
+            it { is_expected.not_to contain_file("#{data_dir}/etc/artifactory.system.properties") }
+            it { is_expected.not_to contain_file("#{data_dir}/etc/storage.properties") }
+            it { is_expected.not_to contain_file("#{data_dir}/etc/db.properties") }
+            it { is_expected.not_to contain_file("#{data_dir}/etc/artifactory.lic").with_ensure('absent') }
+            it { is_expected.not_to contain_file("#{data_dir}/etc/plugins") }
           end
         end
       end

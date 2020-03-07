@@ -18,6 +18,7 @@ class artifactory::service(
   Artifactory::Service $service_provider
 ) {
   assert_private()
+
   if $manage {
     case $service_provider {
       'sysv': {

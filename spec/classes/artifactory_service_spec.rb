@@ -9,9 +9,9 @@ describe 'artifactory' do
       'sources' => {
         'v6.1.0' => {
           'ensure'  => 'present',
-          'version' => '6.1.0'
-        }
-      }
+          'version' => '6.1.0',
+        },
+      },
     }
   end
 

@@ -52,7 +52,7 @@ def ensure_module_defined(module_name)
 end
 
 shared_examples :compile, compile: true do
-  it { should compile.with_all_deps }
+  it { is_expected.to compile.with_all_deps }
 end
 
 # 'spec_overrides' from sync.yml will appear below this line

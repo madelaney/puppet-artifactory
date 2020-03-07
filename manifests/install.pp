@@ -18,11 +18,11 @@ class artifactory::install (
   Variant $data_dir                 = $::artifactory::data_dir,
   Boolean $manage_user              = $::artifactory::manage_user
 ) {
+  assert_private()
+
   if empty($sources) {
     fail('Using source install but source version is empty')
   }
-
-  assert_private()
 
   exec {
     "mktree ${data_dir}":

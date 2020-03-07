@@ -13,10 +13,7 @@ define artifactory::db::postgresql(
   $group = $::artifactory::group,
   $jre   = undef
 ) {
-  # The base class must be included first because it is used by parameter defaults
-  if ! defined(Class['artifactory']) {
-    fail('You must include the Artifactory base class before using any Artifactory defined resources')
-  }
+  assert_private()
 
   if $jre {
     $jar = "postgresql-${version}.${jre}.jar"

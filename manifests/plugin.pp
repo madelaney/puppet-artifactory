@@ -18,6 +18,5 @@ define artifactory::plugin(
       path   =>"${::artifactory::data_dir}/etc/plugins/${title}",
       user   => $user,
       group  => $group;
-
   }
 }

@@ -1,56 +1,59 @@
 require 'spec_helper'
 
 class Version < Array
-  def initialize s
+  def initialize(s)
     super(s.split('.').map { |e| e.to_i })
   end
-  def < x
-    (self <=> x) < 0
+
+  def <(other)
+    (self <=> other) < 0
   end
-  def > x
-    (self <=> x) > 0
+
+  def >(other)
+    (self <=> other) > 0
   end
-  def == x
-    (self <=> x) == 0
+
+  def ==(other)
+    (self <=> other) == 0
   end
 end
 
 describe 'artifactory' do
   ['oss', 'pro'].each do |artifactory_type|
-    context "#{artifactory_type}" do
+    context artifactory_type.to_s do
       let :default_params do
         {
           'ensure'       => 'present',
           'type'         => artifactory_type,
           'plugins'      => {
             'download-directory' => {
-              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/cleanup/buildCleanup/buildCleanup.groovy'
+              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/cleanup/buildCleanup/buildCleanup.groovy',
             },
             'build-properties' => {
-              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/build/buildPropertySetter/buildPropertySetter.groovy'
+              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/build/buildPropertySetter/buildPropertySetter.groovy',
             },
             'layout-properties' => {
-              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/storage/layoutProperties/layoutProperties.groovy'
-            }
+              'url' => 'https://github.com/JFrogDev/artifactory-user-plugins/blob/master/storage/layoutProperties/layoutProperties.groovy',
+            },
           },
           'sources' => {
             'v4.5.1' => {
               'ensure'  => 'present',
-              'version' => '4.5.1'
+              'version' => '4.5.1',
             },
             'v4.5.2' => {
               'ensure'  => 'present',
-              'version' => '4.5.2'
+              'version' => '4.5.2',
             },
             'v5.1.4' => {
               'ensure'  => 'present',
-              'version' => '5.1.4'
+              'version' => '5.1.4',
             },
             'v6.1.0' => {
               'ensure'  => 'present',
-              'version' => '6.1.0'
-            }
-          }
+              'version' => '6.1.0',
+            },
+          },
         }
       end
 
@@ -119,29 +122,29 @@ describe 'artifactory' do
               it { is_expected.to contain_exec("mktree #{data_dir}") }
 
               ['v4.5.1', 'v4.5.2', 'v5.1.4', 'v6.1.0'].each do |ver|
-                _s_verion = ver.gsub(/v/, '')
+                version_str = ver.delete('v')
 
                 it { is_expected.to contain_artifactory__package__source(ver) }
-                it { is_expected.to contain_artifactory__links("data links for #{_s_verion}") }
-                it { is_expected.to contain_exec("tomcat permission (#{_s_verion})") }
-                it { is_expected.to contain_exec("update _real_install_dir permissions (#{_s_verion})") }
+                it { is_expected.to contain_artifactory__links("data links for #{version_str}") }
+                it { is_expected.to contain_exec("tomcat permission (#{version_str})") }
+                it { is_expected.to contain_exec("update _real_install_dir permissions (#{version_str})") }
 
-                it { is_expected.to contain_archive("jfrog-artifactory-#{artifactory_type}-#{_s_verion}.zip") }
+                it { is_expected.to contain_archive("jfrog-artifactory-#{artifactory_type}-#{version_str}.zip") }
 
-                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/artifactory.default") }
-                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/etc") }
-                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/logs") }
-                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/data") }
+                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{version_str}/artifactory.default") }
+                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{version_str}/etc") }
+                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{version_str}/logs") }
+                it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{version_str}/data") }
 
-                if Version.new(_s_verion) > Version.new('5.1.1')
-                  it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/access") }
-                  it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/run") }
-                  it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{_s_verion}/support") }
+                if Version.new(version_str) > Version.new('5.1.1')
+                  it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{version_str}/access") }
+                  it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{version_str}/run") }
+                  it { is_expected.to contain_file("#{install_dir}/artifactory-#{artifactory_type}-#{version_str}/support") }
                 end
 
                 case facts[:os]['family']
                 when 'FreeBSD'
-                  it { is_expected.to contain_exec("fix shebang on artifactory.sh (#{_s_verion})") }
+                  it { is_expected.to contain_exec("fix shebang on artifactory.sh (#{version_str})") }
                   it { is_expected.to contain_exec('set rcvar') }
                   it { is_expected.to contain_file('/usr/local/etc/rc.d/artifactory') }
 

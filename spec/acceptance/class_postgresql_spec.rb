@@ -2,8 +2,8 @@ require 'spec_helper_acceptance'
 
 describe 'artifactory class' do
   context 'with postgre sql parameters' do
-    if default['platform'] =~ /freebsd/
-      it 'should work with no errors on freebsd' do
+    if default['platform'] =~ %r{freebsd}
+      it 'works with no errors on freebsd' do
         pp = <<-CATALOG
         package {
           ['openjdk8', 'bash']:
